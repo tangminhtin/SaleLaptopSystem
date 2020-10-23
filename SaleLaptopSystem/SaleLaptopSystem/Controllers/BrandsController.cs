@@ -47,7 +47,7 @@ namespace SaleLaptopSystem.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Image,Address")] Brand brand)
+        public ActionResult Create([Bind(Include = "ID,Name,Image,Active")] Brand brand)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace SaleLaptopSystem.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Image,Address")] Brand brand)
+        public ActionResult Edit([Bind(Include = "ID,Name,Image,Active")] Brand brand)
         {
             if (ModelState.IsValid)
             {
