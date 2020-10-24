@@ -210,6 +210,10 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="img\background.jpg" />
+    <Content Include="img\Brands_img\apple_logo.jpg" />
+    <Content Include="img\Brands_img\asus_logo-1024x538.jpg" />
+    <Content Include="img\Brands_img\HP-Logo-1067x600.jpg" />
+    <Content Include="img\Brands_img\logo-may-tinh.jpg" />
     <Content Include="img\head1.jpg" />
     <Content Include="img\head2.jpg" />
     <Content Include="img\head3.jpeg" />
