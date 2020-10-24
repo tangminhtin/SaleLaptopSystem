@@ -18,7 +18,7 @@ namespace SaleLaptopSystem
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            Database.SetInitializer<SaleLaptopSystemContext>(new DropCreateDatabaseIfModelChanges<SaleLaptopSystemContext>());
+            //Database.SetInitializer<SaleLaptopSystemContext>(new DropCreateDatabaseIfModelChanges<SaleLaptopSystemContext>());
         }
     }
 }

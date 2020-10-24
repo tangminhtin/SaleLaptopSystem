@@ -9,6 +9,10 @@ namespace SaleLaptopSystem.DAL
 {
     public class SaleLaptopSystemContext: DbContext
     {
+        public SaleLaptopSystemContext(): base("SaleLaptopSystem")
+        {
+            Database.SetInitializer<SaleLaptopSystemContext>(new DropCreateDatabaseIfModelChanges<SaleLaptopSystemContext>());
+        }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Product> Products { get; set; }
