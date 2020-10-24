@@ -15,10 +15,22 @@ namespace SaleLaptopSystem.Controllers
     {
         private SaleLaptopSystemContext db = new SaleLaptopSystemContext();
 
-        // GET: Products
-        public ActionResult Index()
+        public ActionResult Apple()
         {
             var products = db.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.ProductDetail);
+            products = products.Where(p => p.BrandID == 1);
+            return View(products.ToList());
+        }
+
+
+        // GET: Products
+        public ActionResult Index(int brand)
+        {
+            var products = db.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.ProductDetail);
+            if (!string.IsNullOrEmpty(brand.ToString()))
+            {
+                products = products.Where(p => p.BrandID == brand);
+            }
             return View(products.ToList());
         }
 

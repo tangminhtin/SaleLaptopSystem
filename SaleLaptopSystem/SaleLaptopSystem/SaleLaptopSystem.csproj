@@ -203,10 +203,17 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\index.css" />
+    <Content Include="Content\css\shared.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\background.jpg" />
+    <Content Include="img\head1.jpg" />
+    <Content Include="img\head2.jpg" />
+    <Content Include="img\head3.jpeg" />
+    <Content Include="img\head4.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -219,6 +226,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\shared.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -299,6 +307,7 @@
     <Content Include="Views\ProductDetails\Details.cshtml" />
     <Content Include="Views\ProductDetails\Edit.cshtml" />
     <Content Include="Views\ProductDetails\Index.cshtml" />
+    <Content Include="Views\TEEEEEEEEEEE.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

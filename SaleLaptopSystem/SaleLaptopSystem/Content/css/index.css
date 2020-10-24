@@ -1,0 +1,13 @@
+.discount {
+    font-size: small;
+    text-decoration: line-through;
+}
+
+.card-product {
+    background-color: #f8bbd0;
+    min-height: 550px;
+}
+
+.card-product button {
+    margin-bottom: 10px;
+}

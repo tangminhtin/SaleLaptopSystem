@@ -1,81 +1,43 @@
 ﻿@model IEnumerable<SaleLaptopSystem.Models.Product>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Products";
 }
 
-<h2>Index</h2>
+<h1 class="text-center btn-block btn-pink rounded-pill">Apple</h1>
+<div class="row row-cols-1 row-cols-md-3">
+    @foreach (var p in Model)
+    {
+        <div class="col mb-4">
+            <!-- Card -->
+            <div class="card card-product">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="card-img-top"
+                         src="https://cdn.tgdd.vn/Products/Images/44/215941/macbook-pro-16-201926-macbookprotouch16inch-1-600x600.jpg"
+                         alt="Card image cap">
+                    <a href="#!">
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <!--Card content-->
+                <div class="card-body">
+                    <h4 class="card-title">@Html.DisplayName(p.Name)</h4>
+                    <h5>
+                        <span class="red-text">$@Html.DisplayName(p.Discount.ToString())đ</span> <span class="discount">$@Html.DisplayName(p.Price.ToString())đ</span>
+                    </h5>
+                    <hr>
+                    <p class="card-text purple-text">
+                        @Html.DisplayName(p.Features)
+                    </p>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-pink btn-md rounded-pill">Read more</button>
+                    <button type="button" class="btn btn-pink btn-md rounded-pill">Add Cart</button>
+                </div>
+            </div>
+            <!-- Card -->
+        </div>
+    }
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Brand.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProductDetail.Processor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Discount)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Features)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Active)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Brand.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProductDetail.Processor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Discount)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Features)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Active)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
-
-</table>
+</div>
