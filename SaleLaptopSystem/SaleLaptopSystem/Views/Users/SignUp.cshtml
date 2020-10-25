@@ -11,7 +11,7 @@
         <img src="~/img/sign-up.jpg" alt="">
     </div>
 
-    @using (Html.BeginForm("Login", "Users", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "col-md-8" }))
+    @using (Html.BeginForm("SignUp", "Users", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "col-md-8" }))
     {
         @Html.AntiForgeryToken()
         <div class="md-form p-2">
@@ -56,10 +56,10 @@
 
         <p class="text-center">
             Already an account?
-            @Html.ActionLink("Login", "Login", "Users");
+            @Html.ActionLink("Login", "Login", "Users")
         </p>
 
-        <button type="submit" class="btn btn-pink btn-block rounded-pill">Sign Up</button>
+        <button value="SignUp" type="submit" class="btn btn-pink btn-block rounded-pill">Sign Up</button>
     }
 
 </div>
