@@ -71,7 +71,9 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Video)
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="@Html.DisplayFor(Model => Model.Video)" allowfullscreen></iframe>
+            </div>
         </dd>
 
         <dt>

@@ -32,7 +32,8 @@
                     </p>
                 </div>
                 <div class="text-center">
-                    <button type="button" class="btn btn-pink btn-md rounded-pill">Read more</button>
+
+                    <button type="button" class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Readmore", "Details", "ProductDetails", new { id = p.ProductDetailID }, null)</button>
                     <button type="button" class="btn btn-pink btn-md rounded-pill">Add Cart</button>
                 </div>
             </div>
