@@ -1,0 +1,69 @@
+﻿@model SaleLaptopSystem.Models.User
+
+@{
+    ViewBag.Title = "Sign Up";
+}
+
+@Styles.Render("~/Content/css/sign-up.css")
+
+<div class="row sign-up">
+    <div class="col-md-4">
+        <img src="~/img/sign-up.jpg" alt="">
+    </div>
+
+    @using (Html.BeginForm("Login", "Users", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "col-md-8" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="md-form p-2">
+            <h1 class="text-center text-uppercase purple-text font-weight-bold">Sign Up</h1>
+        </div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="md-form">
+            @Html.LabelFor(m => m.Fullname)
+            @Html.TextBoxFor(m => m.Fullname, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Fullname, "", new { @class = "text-danger" })
+        </div>
+        <div class="md-form">
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+        </div>
+        <div class="md-form">
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+        </div>
+        <div class="md-form">
+            <label for="confirm">Confirm password:</label>
+            <input id="confirm" type="password" class="form-control">
+        </div>
+        <div class="md-form">
+            @Html.LabelFor(m => m.Phone)
+            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
+        </div>
+        <div class="md-form">
+            @Html.LabelFor(m => m.Address)
+            @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })
+        </div>
+        <div class="md-form">
+            @Html.LabelFor(m => m.Image)
+            @Html.TextBoxFor(m => m.Image, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Image, "", new { @class = "text-danger" })
+        </div>
+
+        <p class="text-center">
+            Already an account?
+            @Html.ActionLink("Login", "Login", "Users");
+        </p>
+
+        <button type="submit" class="btn btn-pink btn-block rounded-pill">Sign Up</button>
+    }
+
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

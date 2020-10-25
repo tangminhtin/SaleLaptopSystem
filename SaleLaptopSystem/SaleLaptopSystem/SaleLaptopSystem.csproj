@@ -183,6 +183,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010241752258_InitialCreate.cs" />
+    <Compile Include="Migrations\202010241752258_InitialCreate.Designer.cs">
+      <DependentUpon>202010241752258_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010250238420_InitalDatabase.cs" />
+    <Compile Include="Migrations\202010250238420_InitalDatabase.Designer.cs">
+      <DependentUpon>202010250238420_InitalDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010250426195_UserValidation.cs" />
+    <Compile Include="Migrations\202010250426195_UserValidation.Designer.cs">
+      <DependentUpon>202010250426195_UserValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Category.cs" />
@@ -204,7 +217,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\index.css" />
+    <Content Include="Content\css\login.css" />
     <Content Include="Content\css\shared.css" />
+    <Content Include="Content\css\sign-up.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -218,6 +233,8 @@
     <Content Include="img\head2.jpg" />
     <Content Include="img\head3.jpeg" />
     <Content Include="img\head4.jpg" />
+    <Content Include="img\login.jpg" />
+    <Content Include="img\sign-up.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -312,6 +329,8 @@
     <Content Include="Views\ProductDetails\Edit.cshtml" />
     <Content Include="Views\ProductDetails\Index.cshtml" />
     <Content Include="Views\TEEEEEEEEEEE.cshtml" />
+    <Content Include="Views\Users\SignUp.cshtml" />
+    <Content Include="Views\Users\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -328,6 +347,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202010241752258_InitialCreate.resx">
+      <DependentUpon>202010241752258_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010250238420_InitalDatabase.resx">
+      <DependentUpon>202010250238420_InitalDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010250426195_UserValidation.resx">
+      <DependentUpon>202010250426195_UserValidation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,17 @@
+.sign-up {
+    background: #f8a5c2;
+    border-radius: 30px;
+    box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.sign-up img {
+    width: 110%;
+    height: 700px;
+    margin-left: -30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.sign-up label {
+    color: #ff00d4;
+}

@@ -1,0 +1,41 @@
+﻿@model SaleLaptopSystem.Models.User
+
+@{
+    ViewBag.Title = "Login";
+}
+
+@Styles.Render("~/Content/css/login.css")
+
+<div class="row sign-up">
+    <div class="col-md-4">
+        <img src="~/img/login.jpg" alt="">
+    </div>
+    @using (Html.BeginForm("Login", "Users", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "col-md-7" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="md-form p-2">
+            <h1 class="text-center text-uppercase purple-text font-weight-bold">Login</h1>
+        </div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="md-form">
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+        </div>
+        <div class="md-form">
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+        </div>
+        <p class="text-center">
+            Not a member?
+            @Html.ActionLink("Sign Up", "SignUp", "Users");
+        </p>
+        <button type="submit" class="btn btn-pink btn-block rounded-pill">Login</button>
+
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

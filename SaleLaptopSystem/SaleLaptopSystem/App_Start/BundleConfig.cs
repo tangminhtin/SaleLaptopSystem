@@ -27,7 +27,9 @@ namespace SaleLaptopSystem
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/css/shared.css",
-                      "~/Content/css/index.css"));
+                      "~/Content/css/index.css",
+                      "~/Content/css/login.css",
+                      "~/Content/css/sign-up.css"));
         }
     }
 }
