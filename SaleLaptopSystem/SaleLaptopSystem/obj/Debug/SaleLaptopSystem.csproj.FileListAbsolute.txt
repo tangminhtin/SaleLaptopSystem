@@ -211,10 +211,10 @@ E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin
 E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitialCreate.resources
 E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitalDatabase.resources
+E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.UserValidation.resources
 E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.GenerateResource.cache
 E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CoreCompileInputs.cache
 E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CopyComplete
 E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
 E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
-E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.UserValidation.resources
 E:\Sources\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csprojAssemblyReference.cache

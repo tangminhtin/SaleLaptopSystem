@@ -235,6 +235,7 @@
     <Content Include="img\head4.jpg" />
     <Content Include="img\login.jpg" />
     <Content Include="img\sign-up.jpg" />
+    <Content Include="img\user.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />

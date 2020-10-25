@@ -26,9 +26,11 @@ namespace SaleLaptopSystem.Controllers
         public ActionResult Login([Bind(Include = "Email,Password")] User user)
         {
                 var users = db.Users;
-                var usr = users.Where(u => u.Email == user.Email && u.Password == MD5Hash(user.Password));
-                if (usr.Count() > 0)
+                string pass = MD5Hash(user.Password);
+                var usr = users.First(u => u.Email.Equals(user.Email) && u.Password.Equals(pass));
+                if (usr != null)
                 {
+                    Session["User"] = usr ;
                     return RedirectToAction("Index");
                 }
             return View();
@@ -43,15 +45,25 @@ namespace SaleLaptopSystem.Controllers
         {
             if (ModelState.IsValid)
             {
-                user.Password = MD5Hash(user.Password);
-                user.Role = "user";
-                user.Active = true;
-                db.Users.Add(user);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (db.Users.First(u => u.Email.Equals(user.Email)) != null)
+                {
+                    user.Password = MD5Hash(user.Password);
+                    user.Role = "user";
+                    user.Active = true;
+                    db.Users.Add(user);
+                    db.SaveChanges();
+                    return RedirectToAction("Login");
+                }
             }
             return View(user);
         }
+
+        public ActionResult Logout()
+        {
+            Session["User"] = null;
+            return Redirect("/");
+        }
+
         // GET: Users
         public ActionResult Index()
         {
