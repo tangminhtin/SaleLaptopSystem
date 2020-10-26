@@ -17,8 +17,10 @@ namespace SaleLaptopSystem.Controllers
 
         public ActionResult Apple()
         {
-            var products = db.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.ProductDetail);
+
+            var products = db.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.ProductDetail).Include(p => p.Images);
             products = products.Where(p => p.BrandID == 1);
+           
             return View(products.ToList());
         }
 
@@ -26,11 +28,14 @@ namespace SaleLaptopSystem.Controllers
         // GET: Products
         public ActionResult Index(int brand)
         {
-            var products = db.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.ProductDetail);
+            var products = db.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.ProductDetail).Include(p => p.Images);
             if (!string.IsNullOrEmpty(brand.ToString()))
             {
                 products = products.Where(p => p.BrandID == brand);
+                
             }
+           
+
             return View(products.ToList());
         }
 

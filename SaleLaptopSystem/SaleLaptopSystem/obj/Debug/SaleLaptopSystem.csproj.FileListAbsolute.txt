@@ -330,3 +330,9 @@ E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptop
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CopyComplete
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
+E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Net.Http.Formatting.dll
+E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.dll
+E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.WebHost.dll
+E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Net.Http.Formatting.xml
+E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.xml
+E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.WebHost.xml

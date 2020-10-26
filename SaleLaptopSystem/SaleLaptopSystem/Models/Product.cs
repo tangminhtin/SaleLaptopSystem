@@ -23,9 +23,9 @@ namespace SaleLaptopSystem.Models
 
         public int? ProductDetailID { get; set; }
         public virtual ProductDetail ProductDetail { get; set; }
-
         public virtual ICollection<Image> Images { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
+    
 }
