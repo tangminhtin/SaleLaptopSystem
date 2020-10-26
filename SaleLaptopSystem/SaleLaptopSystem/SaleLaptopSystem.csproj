@@ -229,6 +229,7 @@
     <Content Include="img\Brands_img\asus_logo-1024x538.jpg" />
     <Content Include="img\Brands_img\HP-Logo-1067x600.jpg" />
     <Content Include="img\Brands_img\logo-may-tinh.jpg" />
+    <Content Include="img\cart.png" />
     <Content Include="img\head1.jpg" />
     <Content Include="img\head2.jpg" />
     <Content Include="img\head3.jpeg" />
@@ -332,6 +333,7 @@
     <Content Include="Views\TEEEEEEEEEEE.cshtml" />
     <Content Include="Views\Users\SignUp.cshtml" />
     <Content Include="Views\Users\Login.cshtml" />
+    <Content Include="Views\Orders\Checkout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
