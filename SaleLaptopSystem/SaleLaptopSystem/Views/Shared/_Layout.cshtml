@@ -31,14 +31,26 @@
                     <li class="nav-item">@Html.ActionLink("Apple", "Index", "Products", new { brand = 3 }, new { @class = "nav-link" })</li>
                     <li class="nav-item">@Html.ActionLink("HP", "Index", "Products", new { brand = 4 }, new { @class = "nav-link" })</li>
                     <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
+
+
+
                     @if (Session["User"] == null)
                     {
                         <li class="nav-item">@Html.ActionLink("Login", "Login", "Users", null, new { @class = "nav-link" })</li>
                         <li class="nav-item">@Html.ActionLink("Sign Up", "SignUp", "Users", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item">
+                            <a href="/Orders/Checkout">
+                                <img id="cart" src="~/img/cart.png"><span id="cartNum">0</span>
+                            </a>
+                        </li>
                     }
                     else
                     {
+                        <li class="nav-item">
+                            <a href="/Users/Index">
+                                <img id="cart" src="~/img/cart.png"><span id="cartNum">10</span>
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <div class="dropdown show">
                                 <img class="showUser rounded-circle" onerror="this.src='https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg';" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuLink" src="@((Session["User"] as User).Image)" alt="Alternate Text" />
@@ -48,8 +60,7 @@
                             </div>
                         </li>
                     }
-
-</ul>
+                </ul>
                 <div class="input-group-append ml-auto" id="search">
                     <input type="text" class="form-control" placeholder="Search">
                     <div class="input-group-append">

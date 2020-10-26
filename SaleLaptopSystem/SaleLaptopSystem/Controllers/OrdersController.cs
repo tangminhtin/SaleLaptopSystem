@@ -15,6 +15,12 @@ namespace SaleLaptopSystem.Controllers
     {
         private SaleLaptopSystemContext db = new SaleLaptopSystemContext();
 
+        public ActionResult Checkout()
+        {
+            return View();
+        }
+
+
         // GET: Orders
         public ActionResult Index()
         {
