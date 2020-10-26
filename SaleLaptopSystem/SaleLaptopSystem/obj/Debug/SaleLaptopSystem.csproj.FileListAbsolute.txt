@@ -321,7 +321,6 @@ E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.S
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.OAuth.xml
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csprojAssemblyReference.cache
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitialCreate.resources
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitalDatabase.resources
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.UserValidation.resources
@@ -330,14 +329,12 @@ E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptop
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CopyComplete
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
-<<<<<<< HEAD
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Net.Http.Formatting.dll
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.dll
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.WebHost.dll
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Net.Http.Formatting.xml
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.xml
 E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.WebHost.xml
-=======
 C:\Users\tangminhtin\Desktop\AAAAAAAAAA\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.dll.config
 C:\Users\tangminhtin\Desktop\AAAAAAAAAA\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.dll
 C:\Users\tangminhtin\Desktop\AAAAAAAAAA\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.pdb
@@ -450,4 +447,4 @@ C:\Users\tangminhtin\Desktop\AAAAAAAAAA\SaleLaptopSystem\SaleLaptopSystem\SaleLa
 C:\Users\tangminhtin\Desktop\AAAAAAAAAA\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CopyComplete
 C:\Users\tangminhtin\Desktop\AAAAAAAAAA\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
 C:\Users\tangminhtin\Desktop\AAAAAAAAAA\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
->>>>>>> origin
+E:\c lab\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csprojAssemblyReference.cache

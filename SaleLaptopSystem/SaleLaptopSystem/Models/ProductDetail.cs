@@ -20,5 +20,6 @@ namespace SaleLaptopSystem.Models
         public string Keyboard { get; set; }
         public string Battery { get; set; }
         public virtual ICollection<Product> Products { get; set; }
+
     }
 }
