@@ -8,10 +8,10 @@
 <div class="row row-cols-1 row-cols-md-3">
     @foreach (var p in Model)
     {
-        foreach (var imange in p.Images)
-        {
-            if (p.ID == imange.ProductID)
-            {
+        //foreach (var imange in p.Images)
+        //{
+        //    if (p.ID == imange.ProductID)
+        //    {
                 <div class="col mb-4">
                     <!-- Card -->
                     <div class="card card-product">
@@ -20,14 +20,14 @@
                            
                             
 
-                            <a href="/ProductDetails/Details/@p.ProductDetailID">
+                            @*<a href="/ProductDetails/Details/@p.ProductDetailID">
                                 <img class="card-img-top"
                                      src="@imange.image"
                                      alt="Card image cap">
                                 <div class="mask rgba-white-slight"></div>
 
 
-                            </a>
+                            </a>*@
                         </div>
                         <!--Card content-->
                         <div class="card-body">
@@ -48,9 +48,9 @@
                     </div>
                     <!-- Card -->
                 </div>
-            }
+            @*}
 
-        }
+        }*@
     }
 
 </div>
