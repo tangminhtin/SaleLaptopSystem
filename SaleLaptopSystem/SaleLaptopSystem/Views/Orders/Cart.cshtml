@@ -1,0 +1,18 @@
+﻿@model IEnumerable<SaleLaptopSystem.Models.Order>
+@using SaleLaptopSystem.Models 
+
+@{
+    ViewBag.Title = "Checkout";
+}
+@Styles.Render("~/Content/css/cart.css")
+
+<div id="result" data-remote-url="@Url.Action("Index", "Orders")"></div>
+
+
+@Scripts.Render("~/Scripts/js/cart.js")
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        reload();
+    });
+</script>

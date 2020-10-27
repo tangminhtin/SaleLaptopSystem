@@ -1,63 +1,33 @@
 ﻿@model IEnumerable<SaleLaptopSystem.Models.Order>
-
+@using SaleLaptopSystem.Models
 @{
     ViewBag.Title = "Checkout";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.User.Fullname)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.date)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TotalQuantiy)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TotalPrice)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Note)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Active)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.User.Fullname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.date)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TotalQuantiy)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TotalPrice)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Note)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Active)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
-
-</table>
+<div class="sign-up container">
+    
+    <form class="text-center">
+        <div class="md-form p-2">
+            <h1 class="text-center text-uppercase purple-text font-weight-bold">Confirm Order Info</h1>
+        </div>
+        <div class="md-form">
+            <label for="fullname">Fullname:</label>
+            <input name="fullname" type="text" class="form-control" id="fullname" value="@((Session["User"] as User).Fullname)">
+        </div>
+        <div class="md-form">
+            <label for="phone">Phone:</label>
+            <input name="phone" type="text" class="form-control" id="phone" value="@((Session["User"] as User).Phone)">
+        </div>
+        <div class="md-form">
+            <label for="email">Email address:</label>
+            <input name="email" type="email" class="form-control" id="email" value="@((Session["User"] as User).Email)">
+        </div>
+        <div class="md-form">
+            <label for="address">Address:</label>
+            <input name="address" type="text" class="form-control" id="address" value="@((Session["User"] as User).Address)">
+        </div>
+        
+        
+        <button type="submit" class="btn btn-pink btn-block rounded-pill">Confirm Order</button>
+    </form>
+</div>

@@ -17,15 +17,73 @@ namespace SaleLaptopSystem.Controllers
 
         public ActionResult Checkout()
         {
+            if (Session["User"] == null)
+            {
+                return Redirect("/Users/Login");
+            }
             return View();
         }
 
+       
+        public ActionResult Cart(int? prodID, string msg)
+        {
+            if (Session["cart"] == null)
+            {
+                List<CartItem> carts = new List<CartItem>();
+                Product product = db.Products.FirstOrDefault(p => p.ID == prodID);
+                carts.Add(new CartItem { Product = product, Quantity = 1 });
+                Session["cart"] = carts;
+            } else
+            {
+                List<CartItem> carts = (List<CartItem>)Session["cart"];
+                int indexExist = carts.FindIndex(c => c.Product.ID == prodID);
+                if (indexExist != -1)
+                {
+                    if (msg != null)
+                    {
+                        if (msg.Equals("minus"))
+                        {
+                            carts[indexExist].Quantity--;
+                            if(carts[indexExist].Quantity == 0)
+                            {
+                                carts.RemoveAt(indexExist);
+                            }
+                        }
+                        else if (msg.Equals("add"))
+                        {
+                            carts[indexExist].Quantity++;
+                        }
+                    }
+                } else
+                {
+                    Product product = db.Products.FirstOrDefault(p => p.ID == prodID);
+                    carts.Add(new CartItem { Product = product, Quantity = 1 });
+                }
+                Session["cart"] = carts;
+            }
+
+            return PartialView();
+        }
+
+        public ActionResult Remove(int? prodID)
+        {
+            List<CartItem> carts = (List<CartItem>)Session["cart"];
+            carts.RemoveAt(carts.FindIndex(c => c.Product.ID == prodID));
+            Session["cart"] = carts;
+            return RedirectToAction("Cart");
+        }
+
+        //private int isExist(int prodID)
+        //{
+        //    List<CartItem> carts = (List<CartItem>)Session["cart"];
+        //    return carts.FindIndex(c => c.Product.ID.Equals(prodID));
+        //}
 
         // GET: Orders
         public ActionResult Index()
         {
-            var orders = db.Orders.Include(o => o.User);
-            return View(orders.ToList());
+            //var orders = db.Orders.Include(o => o.User);
+            return View();
         }
 
         // GET: Orders/Details/5

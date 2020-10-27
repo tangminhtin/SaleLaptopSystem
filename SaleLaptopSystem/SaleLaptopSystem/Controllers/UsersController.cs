@@ -25,14 +25,17 @@ namespace SaleLaptopSystem.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Login([Bind(Include = "Email,Password")] User user)
         {
-                var users = db.Users;
-                string pass = MD5Hash(user.Password);
-                var usr = users.First(u => u.Email.Equals(user.Email) && u.Password.Equals(pass));
-                if (usr != null)
-                {
-                    Session["User"] = usr ;
-                    return RedirectToAction("Index");
-                }
+            var users = db.Users;
+            string pass = MD5Hash(user.Password);
+            var usr = users.FirstOrDefault(u => u.Email.Equals(user.Email) && u.Password.Equals(pass));
+            if (usr != null)
+            {
+                Session["User"] = usr ;
+                return RedirectToAction("Index");
+            } else
+            {
+                ViewBag.Error = "Your username or password incorrect!";
+            }
             return View();
         }
         public ActionResult SignUp()
@@ -45,7 +48,7 @@ namespace SaleLaptopSystem.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (db.Users.First(u => u.Email.Equals(user.Email)) != null)
+                if (db.Users.FirstOrDefault(u => u.Email.Equals(user.Email)) == null)
                 {
                     user.Password = MD5Hash(user.Password);
                     user.Role = "user";
@@ -53,6 +56,9 @@ namespace SaleLaptopSystem.Controllers
                     db.Users.Add(user);
                     db.SaveChanges();
                     return RedirectToAction("Login");
+                } else
+                {
+                    ViewBag.Error = "Your account has already";
                 }
             }
             return View(user);

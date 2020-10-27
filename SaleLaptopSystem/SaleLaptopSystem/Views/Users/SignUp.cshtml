@@ -5,11 +5,13 @@
 }
 
 @Styles.Render("~/Content/css/sign-up.css")
+<h3 class="btn-danger btn-block rounded-pill text-center">@ViewBag.Error</h3>
 
 <div class="row sign-up">
     <div class="col-md-4">
         <img src="~/img/sign-up.jpg" alt="">
     </div>
+
 
     @using (Html.BeginForm("SignUp", "Users", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "col-md-8" }))
     {

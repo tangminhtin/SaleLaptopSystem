@@ -3,8 +3,10 @@
 @{
     ViewBag.Title = "Products";
 }
+@Styles.Render("~/Content/css/index.css")
 
-<h1 class="text-center btn-block btn-pink rounded-pill">Apple</h1>
+
+<h1 class="text-center btn-block btn-pink rounded-pill">@ViewBag.Brand</h1>
 <div class="row row-cols-1 row-cols-md-3">
     @foreach (var p in Model)
     {
@@ -17,15 +19,12 @@
                     <div class="card card-product">
                         <!--Card image-->
                         <div class="view overlay">
-                           
                             
-
                             <a href="/ProductDetails/Details/@p.ProductDetailID">
                                 <img class="card-img-top"
                                      src="@imange.image"
                                      alt="Card image cap">
                                 <div class="mask rgba-white-slight"></div>
-
 
                             </a>
                         </div>
@@ -43,7 +42,7 @@
                         <div class="text-center">
 
                             <button type="button" class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Readmore", "Details", "ProductDetails", new { id = p.ProductDetailID }, null)</button>
-                            <button type="button" class="btn btn-pink btn-md rounded-pill">Add Cart</button>
+                            <button type="button" class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Add Cart", "Cart", "Orders", new { prodID = p.ID }, null)</button>
                         </div>
                     </div>
                     <!-- Card -->

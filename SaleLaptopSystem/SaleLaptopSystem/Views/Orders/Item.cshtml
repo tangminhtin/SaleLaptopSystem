@@ -1,10 +1,12 @@
 ﻿@model IEnumerable<SaleLaptopSystem.Models.Order>
-@using SaleLaptopSystem.Models
+@using SaleLaptopSystem.Models 
 
 @{
     ViewBag.Title = "Checkout";
 }
 @Styles.Render("~/Content/css/cart.css")
+
+<h2>Your cart</h2>
 
 <table class="table product">
     <h1 class="text-center rounded-pill btn-pink">Your cart</h1>
@@ -22,8 +24,7 @@
         {
             <tr>
                 <td scope="row">1</td>
-                <td class="item-image"><img class="item-image" src="" alt=""></td>
-               
+                <td class="item-image"><img class="item-image" src="./img/laptop.jpg" alt=""></td>
                 <td>@item.Product.Name</td>
                 <td>@item.Product.Price</td>
                 <td>
@@ -36,7 +37,7 @@
             </tr>
         }
         <tr>
-            <td align="right" colspan="4">Sum</td>
+            <td align="right" colspan="6">Sum</td>
             <td>
                 @{
                     List<CartItem> carts = (List<CartItem>)Session["cart"];
@@ -48,8 +49,28 @@
     </tbody>
 </table>
 
-<a href="/"><button class="btn btn-purple rounded-pill">Continue buy</button></a>
-<a href="/Orders/Checkout"><button class="btn btn-purple rounded-pill float-right">Check out</button></a>
-
-@Scripts.Render("~/Scripts/js/cart.js")
+@Scripts.Render("~/Scripts/js/cart.js"); 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    
+
+
+
+    //$(document).ready(function () {
+    //    //function will be called on button click having id btnsave
+    //    $("#btnPlus-" + prodId).click(function () {
+    //        console.log("#btnPlus-" + prodId)
+    //        $.ajax(
+    //            {
+    //                type: "GET", //HTTP POST Method  
+    //                url: "Cart", // Controller/View   
+    //                data: { //Passing data  
+    //                    prodID: quantity, //Reading text box values using Jquery   
+    //                }
+
+    //            });
+
+    //    });
+    //});
+
+</script>

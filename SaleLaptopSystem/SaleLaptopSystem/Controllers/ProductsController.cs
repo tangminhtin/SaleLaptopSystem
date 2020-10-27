@@ -32,6 +32,8 @@ namespace SaleLaptopSystem.Controllers
            //.Include(p => p.Images)
             if (!string.IsNullOrEmpty(brand.ToString()))
             {
+                String[] brands = { "Asus", "Dell", "Apple", "HP" };
+                ViewBag.Brand = brands[brand - 1];
                 products = products.Where(p => p.BrandID == brand);
                // .Include(p => p.Images)
             }

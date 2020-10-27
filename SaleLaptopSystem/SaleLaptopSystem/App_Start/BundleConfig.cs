@@ -21,6 +21,7 @@ namespace SaleLaptopSystem
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/js/cart.js",
                       "~/Scripts/js/shared.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
@@ -29,6 +30,7 @@ namespace SaleLaptopSystem
                       "~/Content/css/shared.css",
                       "~/Content/css/index.css",
                       "~/Content/css/login.css",
+                      "~/Content/css/cart.css",
                       "~/Content/css/sign-up.css"));
         }
     }
