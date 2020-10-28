@@ -22,8 +22,7 @@
         {
             <tr>
                 <td scope="row">1</td>
-                <td class="item-image"><img class="item-image" src="" alt=""></td>
-               
+                <td class="item-image"><img class="item-image" src="@item.Product.Images.FirstOrDefault(i => i.ProductID == item.Product.ID).image" alt=""></td>
                 <td>@item.Product.Name</td>
                 <td>@item.Product.Price</td>
                 <td>

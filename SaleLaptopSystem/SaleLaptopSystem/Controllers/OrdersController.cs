@@ -30,7 +30,8 @@ namespace SaleLaptopSystem.Controllers
             if (Session["cart"] == null)
             {
                 List<CartItem> carts = new List<CartItem>();
-                Product product = db.Products.FirstOrDefault(p => p.ID == prodID);
+                var products = db.Products.Include(i => i.Images);
+                Product product = products.FirstOrDefault(p => p.ID == prodID);
                 carts.Add(new CartItem { Product = product, Quantity = 1 });
                 Session["cart"] = carts;
             } else
@@ -56,7 +57,8 @@ namespace SaleLaptopSystem.Controllers
                     }
                 } else
                 {
-                    Product product = db.Products.FirstOrDefault(p => p.ID == prodID);
+                    var products = db.Products.Include(i => i.Images);
+                    Product product = products.FirstOrDefault(p => p.ID == prodID);
                     carts.Add(new CartItem { Product = product, Quantity = 1 });
                 }
                 Session["cart"] = carts;
