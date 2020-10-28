@@ -40,7 +40,7 @@
                         <li class="nav-item">@Html.ActionLink("Sign Up", "SignUp", "Users", null, new { @class = "nav-link" })</li>
                         <li class="nav-item">
                             <a href="/Orders/">
-                                @{ 
+                                @{
                                     int quantity = 0;
                                     if (Session["cart"] != null)
                                     {
@@ -77,13 +77,16 @@
                         </li>
                     }
                 </ul>
-                <div class="input-group-append ml-auto" id="search">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <div class="input-group-append">
-                        <button type="submit">Search</button>
+                @using (Html.BeginForm("Index", "Search", FormMethod.Get, new { @class = "col-md-3" }))
+                {
+                    <div class="input-group-append ml-auto" id="search">
+                        <input type="text" class="form-control" name="key" placeholder="Search">
+                        <div class="input-group-append">
+                            <button type="submit">Search</button>
+                        </div>
                     </div>
+                }
                 </div>
-            </div>
         </div>
     </nav>
 
