@@ -5,8 +5,6 @@
 }
 
 <div class="sign-up container">
-    
-    <form class="text-center">
         <div class="md-form p-2">
             <h1 class="text-center text-uppercase purple-text font-weight-bold">Confirm Order Info</h1>
         </div>
@@ -26,8 +24,6 @@
             <label for="address">Address:</label>
             <input name="address" type="text" class="form-control" id="address" value="@((Session["User"] as User).Address)">
         </div>
-        
-        
-        <button type="submit" class="btn btn-pink btn-block rounded-pill">Confirm Order</button>
-    </form>
+        <a href="/Orders/Checkout1"><button class="btn btn-purple rounded-pill float-right">Comfirm Checkout</button></a>
+  
 </div>

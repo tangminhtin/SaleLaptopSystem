@@ -24,7 +24,34 @@ namespace SaleLaptopSystem.Controllers
             return View();
         }
 
-       
+        public ActionResult Checkout1()
+        {
+            List<CartItem> cart1 = (List<CartItem>)Session["cart"];
+            User us = (User)Session["user"];
+            Order od = new Order();
+            od.UserID = us.ID;
+            od.TotalQuantiy = cart1.Count;
+            od.TotalPrice = (Double)cart1.Sum(item => item.Product.Price * item.Quantity);
+            od.Active = true;
+            DateTime now = DateTime.Now;
+            od.date = now;
+            od.Note = "đã đặt";
+            db.Orders.Add(od);
+            db.SaveChanges();
+            int oddID = od.ID;
+            cart1.ForEach(p =>
+            {
+                OrderDetail odt = new OrderDetail();
+                odt.OrderID = oddID;
+                odt.ProductID = p.Product.ID;
+                odt.Quantity = p.Quantity;
+                odt.Price = p.Product.Price;
+                db.OrderDetails.Add(odt);
+                db.SaveChanges();
+            });
+            Session.Remove("cart");
+            return Redirect("/Users/Index");
+        }
         public ActionResult Cart(int? prodID, string msg)
         {
             if (Session["cart"] == null)

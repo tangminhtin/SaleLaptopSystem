@@ -5,50 +5,58 @@
     ViewBag.Title = "Checkout";
 }
 @Styles.Render("~/Content/css/cart.css")
-
-<table class="table product">
-    <h1 class="text-center rounded-pill btn-pink">Your cart</h1>
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Image</th>
-            <th scope="col">Product</th>
-            <th scope="col">Price</th>
-            <th scope="col">Quantity</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (CartItem item in (List<CartItem>)Session["cart"])
-        {
+@if (Session["cart"] == null)
+{
+    <h1 class="text-danger">your cart is Empty</h1>
+}
+else
+{
+    <table class="table product">
+        <h1 class="text-center rounded-pill btn-pink">Your cart</h1>
+        <thead>
             <tr>
-                <td scope="row">1</td>
-                <td class="item-image"><img class="item-image" src="@item.Product.Images.FirstOrDefault(i => i.ProductID == item.Product.ID).image" alt=""></td>
-                <td>@item.Product.Name</td>
-                <td>@item.Product.Price</td>
+                <th scope="col">#</th>
+                <th scope="col">Image</th>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (CartItem item in (List<CartItem>)Session["cart"])
+            {
+                <tr>
+                    <td scope="row">1</td>
+                    <td class="item-image"><img class="item-image" src="@item.Product.Images.FirstOrDefault(i => i.ProductID == item.Product.ID).image" alt=""></td>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Product.Price</td>
+                    <td>
+                        <div>
+                            <button class="button" value="@item.Product.ID" onclick="giam(this)">-</button>
+                            <input id="quantity-@item.Product.ID" type="number" min="1" max="9" step="1" disabled value="@item.Quantity">
+                            <button id="btnPlus-@item.Product.ID" class="button" value="@item.Product.ID" onclick="tang(this)">+</button>
+                        </div>
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td align="right" colspan="4">Sum</td>
                 <td>
-                    <div>
-                        <button class="button" value="@item.Product.ID" onclick="giam(this)">-</button>
-                        <input id="quantity-@item.Product.ID" type="number" min="1" max="9" step="1" disabled value="@item.Quantity">
-                        <button id="btnPlus-@item.Product.ID" class="button" value="@item.Product.ID" onclick="tang(this)">+</button>
-                    </div>
+                    @{
+                        List<CartItem> carts = (List<CartItem>)Session["cart"];
+                        var total = carts.Sum(item => item.Product.Price * item.Quantity);
+                    }
+                    @total
                 </td>
             </tr>
-        }
-        <tr>
-            <td align="right" colspan="4">Sum</td>
-            <td>
-                @{
-                    List<CartItem> carts = (List<CartItem>)Session["cart"];
-                    var total = carts.Sum(item => item.Product.Price * item.Quantity);
-                }
-                @total
-            </td>
-        </tr>
-    </tbody>
-</table>
+        </tbody>
+    </table>
 
-<a href="/"><button class="btn btn-purple rounded-pill">Continue buy</button></a>
-<a href="/Orders/Checkout"><button class="btn btn-purple rounded-pill float-right">Check out</button></a>
+    <a href="/"><button class="btn btn-purple rounded-pill">Continue buy</button></a>
+    <a href="/Orders/Checkout"><button class="btn btn-purple rounded-pill float-right">Check out</button></a>
+}
+
 
 @Scripts.Render("~/Scripts/js/cart.js")
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
