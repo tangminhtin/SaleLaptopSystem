@@ -26,16 +26,21 @@ namespace SaleLaptopSystem.Controllers
 
 
         // GET: Products
-        public ActionResult Index(int brand)
+        public ActionResult Index(int? brand, double? maximumPrice, double? minimunPrice)
         {
             var products = db.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.ProductDetail);
-           //.Include(p => p.Images)
+            //.Include(p => p.Images)
+
             if (!string.IsNullOrEmpty(brand.ToString()))
             {
                 String[] brands = { "Asus", "Dell", "Apple", "HP" };
-                ViewBag.Brand = brands[brand - 1];
+                ViewBag.Brand = brands[brand.Value - 1];
                 products = products.Where(p => p.BrandID == brand);
-               // .Include(p => p.Images)
+                // .Include(p => p.Images)
+            }
+            else
+            {
+                products = products.Where(p => p.Price >= minimunPrice.Value && p.Price <= maximumPrice.Value);
             }
             return View(products.ToList());
         }

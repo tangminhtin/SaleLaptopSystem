@@ -7,6 +7,14 @@
 
 
 <h1 class="text-center btn-block btn-pink rounded-pill">@ViewBag.Brand</h1>
+
+<div class="form-inline">
+    <a href="Products?minimunPrice=10000000&maximumPrice=20000000"><button class="btn-purple rounded-pill">10tr - 20tr</button></a>
+    <a href="Products?minimunPrice=20000000&maximumPrice=30000000"><button class="btn-purple rounded-pill">20tr - 30tr</button></a>
+    <a href="Products?minimunPrice=30000000&maximumPrice=40000000"><button class="btn-purple rounded-pill">40tr - 50tr</button></a>
+    <a href="Products?minimunPrice=50000000&maximumPrice=200000000"><button class="btn-purple rounded-pill">Tren 50tr</button></a>
+
+</div>
 <div class="row row-cols-1 row-cols-md-3">
     @foreach (var p in Model)
     {
@@ -19,7 +27,7 @@
                     <div class="card card-product">
                         <!--Card image-->
                         <div class="view overlay">
-                            
+
                             <a href="/ProductDetails/Details/@p.ProductDetailID">
                                 <img class="card-img-top"
                                      src="@imange.image"
