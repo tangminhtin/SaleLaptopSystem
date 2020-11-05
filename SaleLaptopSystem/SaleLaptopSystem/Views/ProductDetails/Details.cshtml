@@ -3,106 +3,151 @@
 @{
     ViewBag.Title = "Details";
 }
-
-
-
-<div style="background-color:lightpink">
-    <h1 class="text-center"><b><i>ProductDetail</i></b></h1>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            <h3><b>@Html.DisplayNameFor(model => model.Processor)</b> </h3>
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Processor)
-        </dd>
-
-        <dt>
-            <h3><b>@Html.DisplayNameFor(model => model.RAM)</b> </h3>
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.RAM)
-        </dd>
-
-        <dt>
-            <h3><b>@Html.DisplayNameFor(model => model.Screen)</b> </h3>
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Screen)
-        </dd>
-
-        <dt>
-            <h3><b>@Html.DisplayNameFor(model => model.Storage)</b> </h3>
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Storage)
-        </dd>
-
-        <dt>
-            <h3><b>@Html.DisplayNameFor(model => model.Graphic)</b> </h3>
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Graphic)
-        </dd>
-
-        <dt>
-            <h3><b>@Html.DisplayNameFor(model => model.Size)</b> </h3>
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Size)
-        </dd>
-
-        <dt>
-            <h3><b>@Html.DisplayNameFor(model => model.OS)</b> </h3>
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.OS)
-        </dd>
-
-        <dt>
-            <h3><b>@Html.DisplayNameFor(model => model.Video)</b> </h3>
-        </dt>
-
-        <dd>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="@Html.DisplayFor(Model => Model.Video)" allowfullscreen></iframe>
-            </div>
-        </dd>
-
-        <dt>
-            <h3><b>@Html.DisplayNameFor(model => model.Connection)</b> </h3>
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Connection)
-        </dd>
-
-        <dt>
-            <h3><b>@Html.DisplayNameFor(model => model.Keyboard)</b> </h3>
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Keyboard)
-        </dd>
-
-        <dt>
-            <h3><b>@Html.DisplayNameFor(model => model.Battery)</b> </h3>
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Battery)
-        </dd>
-
-    </dl>
-</div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+    <button type="button" class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Edit", "Edit", new { id = Model.ID })   </button>
+    <button type="button" class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Back to List", "Index")</button>
 </p>
+@foreach (var p in ViewBag.ShowProduct)
+{
+    foreach (var imange in p.Images)
+    {
+        if (p.ID == imange.ProductID)
+        {
+            <div class="container">
+                <div class="card" style="background-color:lightpink">
+                    <div class="container-fliud">
+                        <div class="wrapper row">
+                            <div class=" col-md-6">
+                                <div class="preview-pic tab-content">
+                                    <br />
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="@Html.DisplayFor(Model => Model.Video)" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="col mb-4">
+                                    <!-- Card -->
+                                    <div class="card card-product">
+                                        <!--Card image-->
+                                        <div class="view overlay">
+                                            <a href="/ProductDetails/Details/@p.ProductDetailID">
+                                                <img class="card-img-top"
+                                                     src="@imange.image"
+                                                     alt="Card image cap">
+                                                <div class="mask rgba-white-slight"></div>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details col-md-6">
+                                <h2 class="product-title  text-center"><b>@p.Name</b></h2>
+                                <div class="rating text-center">
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <span class="review-no" id="myNumber">reviews</span>
+                                </div>
+                                <dl class="dl-horizontal">
+                                    <dt>
+                                        <h4><b>@Html.DisplayNameFor(model => model.Processor) :</b> </h4>
+                                    </dt>
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Processor)
+                                    </dd>
+
+                                    <dt>
+                                        <h4><b>@Html.DisplayNameFor(model => model.RAM) :</b> </h4>
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.RAM)
+                                    </dd>
+
+                                    <dt>
+                                        <h4><b>@Html.DisplayNameFor(model => model.Screen) :</b> </h4>
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Screen)
+                                    </dd>
+
+                                    <dt>
+                                        <h4><b>@Html.DisplayNameFor(model => model.Storage) :</b> </h4>
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Storage)
+                                    </dd>
+
+                                    <dt>
+                                        <h4><b>@Html.DisplayNameFor(model => model.Graphic) :</b> </h4>
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Graphic)
+                                    </dd>
+
+                                    <dt>
+                                        <h4><b>@Html.DisplayNameFor(model => model.Size) : </b> </h4>
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Size)
+                                    </dd>
+
+                                    <dt>
+                                        <h4><b>@Html.DisplayNameFor(model => model.OS) :</b> </h4>
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.OS)
+                                    </dd>
+
+                                    <dt>
+                                        <h4><b>@Html.DisplayNameFor(model => model.Video) : </b> </h4>
+                                    </dt>
+                                    <dt>
+                                        <h4><b>@Html.DisplayNameFor(model => model.Connection)</b> </h4>
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Connection)
+                                    </dd>
+
+                                    <dt>
+                                        <h4><b>@Html.DisplayNameFor(model => model.Keyboard) :</b> </h4>
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Keyboard)
+                                    </dd>
+
+                                    <dt>
+                                        <h4><b>@Html.DisplayNameFor(model => model.Battery) :</b> </h4>
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Battery)
+                                    </dd>
+                                    <div class="col-md-offset-2 col-md-10 text-center">
+
+                                        <button type="button" class="btn btn-pink btn-md rounded-pill text-white">@Html.ActionLink("Add Cart", "Cart", "Orders", new { prodID = p.ID }, null)</button>
+                                    </div>
+
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        }
+    }
+}

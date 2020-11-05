@@ -1,44 +1,72 @@
-﻿
+﻿@model  PagedList.IPagedList<SaleLaptopSystem.Models.Product>
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@using PagedList;
+@using PagedList.Mvc;
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home";
+    
 }
 @Styles.Render("~/Content/css/index.css")
-
-
 <h1 class="text-center btn-block btn-pink rounded-pill">Giá sốc cuối tuần</h1>
 <div class="row row-cols-1 row-cols-md-3">
-    <div class="col mb-4">
-        <!-- Card -->
-        <div class="card card-product">
-            <!--Card image-->
-            <div class="view overlay">
-                <img class="card-img-top"
-                     src="https://cdn.tgdd.vn/Products/Images/44/215941/macbook-pro-16-201926-macbookprotouch16inch-1-600x600.jpg"
-                     alt="Card image cap">
-                <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-            <!--Card content-->
-            <div class="card-body">
-                <h4 class="card-title">MacBook Pro Touch 16 inch 2019 i7</h4>
-                <h5>
-                    <span class="red-text">$58.990.000đ</span> <span class="discount">$59.990.000đ</span>
-                </h5>
-                <hr>
-                <p class="card-text purple-text">
-                    Màn hình: 16 inch, Retina (3072 x 1920) <br>
-                    CPU: Intel Core i7 Coffee Lake, 2.60 GHz <br>
-                    Đồ họa: Radeon Pro 5300M, 4GB <br>
-                    Mac OS <br>
-                    2.0 kg, Pin: Khoảng 10 giờ
-                </p>
-            </div>
-            <div class="text-center">
-                <button type="button" class="btn btn-pink btn-md rounded-pill">Read more</button>
-                <button type="button" class="btn btn-pink btn-md rounded-pill">Add Cart</button>
-            </div>
-        </div>
-        <!-- Card -->
-    </div>
+    @foreach (var p in Model)
+    {
+        foreach (var imange in p.Images)
+        {
+            if (p.ID == imange.ProductID)
+            {
+                <div class="col mb-4">
+                    <!-- Card -->
+                    <div class="card card-product">
+                        <!--Card image-->
+                        <div class="view overlay">
+
+                            <a href="/ProductDetails/Details/@p.ProductDetailID">
+                                <img class="card-img-top"
+                                     src="@imange.image"
+                                     alt="Card image cap">
+                                <div class="mask rgba-white-slight"></div>
+
+                            </a>
+                        </div>
+                        <!--Card content-->
+                        <div class="card-body">
+                            <h4 class="card-title">@p.Name</h4>
+                            <h5>
+                                @if (p.Discount > 1)
+                                {
+                                    <span class="red-text">$@Html.DisplayName(p.Price.ToString())đ</span> <span class="discount">$@Html.DisplayName(p.Discount.ToString()) đ</span>
+                                }
+                                else
+                                {
+                                    <span class="red-text">$@Html.DisplayName(p.Price.ToString())đ</span>
+                                }
+
+                            </h5>
+                            <hr>
+                            <p class="card-text purple-text">
+                                @p.Features
+                            </p>
+                        </div>
+                        <div class="text-center">
+
+                            <button type="button" class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Readmore", "Details", "ProductDetails", new { id = p.ProductDetailID }, null)</button>
+                            <button  class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Add Cart", "Cart", "Orders", new { prodID = p.ID }, null)</button>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                </div>
+
+            }
+
+        }
+    }
+
 </div>
+Page @(ViewBag.Home.Count < ViewBag.Home.PageNumber ? 0 : ViewBag.Home.PageNumber) of @ViewBag.Home.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page , sortOrder = ViewBag.CurrentSort }));
+
+
+
+

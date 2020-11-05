@@ -19,7 +19,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" id="nav">
-        <div class="nav-link waves-effect waves-light">@Html.ActionLink("Smart Lap", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</div> 
+        <div class="nav-link waves-effect waves-light">@Html.ActionLink("Smart Lap", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</div>
         <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 }
-                </div>
+            </div>
         </div>
     </nav>
 
@@ -117,6 +117,12 @@
             <!--manual navigation end-->
         </div>
         <!--image slider end-->
+    </div>
+    <div class="text-center">
+        <a href="Products?minimunPrice=10000000&maximumPrice=20000000"><button class="btn-purple rounded-pill btn purple-gradient text-dark">10.000.000 - 20.000.000</button></a>
+        <a href="Products?minimunPrice=20000000&maximumPrice=30000000"><button class="btn-purple rounded-pill btn purple-gradient text-dark">20.000.000 - 30.000.000</button></a>
+        <a href="Products?minimunPrice=30000000&maximumPrice=40000000"><button class="btn-purple rounded-pill btn purple-gradient text-dark">30.000.000 - 50.000.000</button></a>
+        <a href="Products?minimunPrice=50000000&maximumPrice=200000000"><button class="btn-purple rounded-pill btn purple-gradient text-dark">50.000.000 - 200.000.000</button></a>
     </div>
 
 
@@ -153,9 +159,6 @@
         </div>
     </footer>
     <!-- Footer -->
-
-
-
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->

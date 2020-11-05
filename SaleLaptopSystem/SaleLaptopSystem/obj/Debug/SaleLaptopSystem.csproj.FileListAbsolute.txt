@@ -808,3 +808,15 @@ H:\ASSM\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopS
 H:\ASSM\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CopyComplete
 H:\ASSM\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
 H:\ASSM\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
+H:\ASSM\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.dll
+H:\ASSM\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.dll
+H:\ASSM\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.xml
+H:\ASSM\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.xml
+H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csprojAssemblyReference.cache
+H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitialCreate.resources
+H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitalDatabase.resources
+H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.UserValidation.resources
+H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.GenerateResource.cache
+H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CoreCompileInputs.cache
+H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
+H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
