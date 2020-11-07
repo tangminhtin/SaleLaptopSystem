@@ -31,11 +31,7 @@ namespace SaleLaptopSystem.Controllers
             ProductDetail productDetail = db.ProductDetails.Find(id);
             if (productDetail == null)
             {
-<<<<<<< HEAD
                 return RedirectToAction("/Home/Index");
-=======
-                return HttpNotFound();
->>>>>>> parent of 998a216... edit form  , product detail
             }
             return View(productDetail);
         }

@@ -1,20 +1,31 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-<div class="container">
-    <div class="text-center">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.534577121744!2d105.7315129181925!3d10.01114667418761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3916a227d0b95a64!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQgQ-G6p24gVGjGoQ!5e0!3m2!1svi!2s!4v1603722283736!5m2!1svi!2s" width="1000" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+@Styles.Render("~/Content/css/index.css")
+
+
+<div class="container">
+    <div class="container">
+        <h1>Contact Info</h1>
+        <address>
+            TRƯỜNG ĐẠI HỌC FPT CẦN THƠ<br />
+            600, đường Nguyễn Văn Cừ (nối dài), phường An Bình, quận Ninh Kiều, TP. Cần Thơ<br />
+            <abbr title="Phone">Phone:</abbr>
+            0394328223
+        </address>
+        <address>
+            <strong>Support:</strong>   <a href="mailto:SmartLap@gmail.com">SmartLap@gmail.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:MarketingSmartLap@gmail.com">MarketingSmartLap@gmail.com</a>
+        </address>
+    </div>
+
+    <div class="container">
+        <h1>Map</h1>
+        <div class="text-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.534577121744!2d105.7315129181925!3d10.01114667418761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3916a227d0b95a64!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQgQ-G6p24gVGjGoQ!5e0!3m2!1svi!2s!4v1603722283736!5m2!1svi!2s" width="1000" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+
+</div>

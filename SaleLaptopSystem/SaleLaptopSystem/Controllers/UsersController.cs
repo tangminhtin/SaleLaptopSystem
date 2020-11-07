@@ -31,12 +31,12 @@ namespace SaleLaptopSystem.Controllers
             if (usr != null)
             {
                 Session["User"] = usr ;
-                return RedirectToAction("Index");
+                return Redirect("/");
             } else
             {
                 ViewBag.Error = "Your username or password incorrect!";
             }
-            return View();
+            return View(    );
         }
         public ActionResult SignUp()
         {
