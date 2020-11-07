@@ -942,3 +942,7 @@ C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLapto
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CopyComplete
+E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.dll
+E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.dll
+E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.xml
+E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.xml

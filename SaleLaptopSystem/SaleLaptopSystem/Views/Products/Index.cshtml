@@ -1,5 +1,6 @@
 ﻿@model  PagedList.IPagedList<SaleLaptopSystem.Models.Product>
 <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
 @using PagedList;
 @using PagedList.Mvc;
 @{
@@ -10,6 +11,7 @@
 
 <h1 class="text-center btn-block btn-pink rounded-pill">@ViewBag.Brand</h1>
 <div class="row row-cols-1 row-cols-md-3">
+
     @foreach (var p in Model)
     {
         foreach (var imange in p.Images)
@@ -66,3 +68,5 @@
 </div>
 Page @(Model.Count < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
 @Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort }));
+@Scripts.Render("~/Scripts/js/cart.js")
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

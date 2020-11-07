@@ -49,8 +49,9 @@ namespace SaleLaptopSystem.Controllers
                 db.OrderDetails.Add(odt);
                 db.SaveChanges();
             });
+            TempData["AlertMessage"] = "Checkout Successfully!";
             Session.Remove("cart");
-            return Redirect("/Users/Index");
+            return Redirect("/");
         }
         public ActionResult Cart(int? prodID, string msg)
         {

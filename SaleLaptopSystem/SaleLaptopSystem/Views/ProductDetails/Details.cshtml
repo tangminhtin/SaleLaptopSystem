@@ -3,11 +3,12 @@
 @{
     ViewBag.Title = "Details";
 }
+
 <p>
     <button type="button" class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Edit", "Edit", new { id = Model.ID })   </button>
     <button type="button" class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Back to List", "Index")</button>
 </p>
-@foreach (var p in ViewBag.ShowProduct)
+@foreach (var p in Model.Products)
 {
     foreach (var imange in p.Images)
     {
