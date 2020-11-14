@@ -14,23 +14,30 @@
 
     @foreach (var p in Model)
     {
-        foreach (var imange in p.Images)
-        {
-            if (p.ID == imange.ProductID)
-            {
+       
                 <div class="col mb-4">
                     <!-- Card -->
                     <div class="card card-product">
                         <!--Card image-->
                         <div class="view overlay">
 
-                            <a href="/ProductDetails/Details/@p.ProductDetailID">
-                                <img class="card-img-top"
-                                     src="@imange.image"
-                                     alt="Card image cap">
-                                <div class="mask rgba-white-slight"></div>
-
-                            </a>
+                            <div class="carousel slide" data-ride="carousel" data-interval="1000" style="width:350px; height: 400px;">
+                                <div class="carousel-inner">
+                                    @foreach (var imange in p.Images)
+                                    {
+                                        if (p.ID == imange.ProductID)
+                                        {
+                                            <a href="/ProductDetails/Details/@p.ProductDetailID">
+                                                <div class="carousel-item @(imange == p.Images.First() ? "active" : "")">
+                                                    <img class="card-img-top" src="@imange.image">
+                                                    @*style=" padding-left: 40px; padding-top: 40px; width: 330px;*@
+                                                </div>
+                                            </a>
+                                        }
+                                    }
+                                </div>
+                                
+                            </div>
                         </div>
                         <!--Card content-->
                         <div class="card-body">
@@ -60,9 +67,7 @@
                     </div>
                     <!-- Card -->
                 </div>
-            }
-
-        }
+        
     }
 
 </div>

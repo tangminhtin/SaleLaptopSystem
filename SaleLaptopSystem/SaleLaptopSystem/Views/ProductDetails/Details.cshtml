@@ -10,10 +10,8 @@
 </p>
 @foreach (var p in Model.Products)
 {
-    foreach (var imange in p.Images)
-    {
-        if (p.ID == imange.ProductID)
-        {
+   
+   
             <div class="container">
                 <div class="card" style="background-color:lightpink">
                     <div class="container-fliud">
@@ -31,13 +29,20 @@
                                     <div class="card card-product">
                                         <!--Card image-->
                                         <div class="view overlay">
-                                            <a href="/ProductDetails/Details/@p.ProductDetailID">
-                                                <img class="card-img-top"
-                                                     src="@imange.image"
-                                                     alt="Card image cap">
-                                                <div class="mask rgba-white-slight"></div>
-
-                                            </a>
+                                            <div class="carousel slide" data-ride="carousel" data-interval="2000" style="width:500px; height: 500px;">
+                                                <div class="carousel-inner">
+                                                    @foreach (var imange in p.Images)
+                                                    {
+                                                        if (p.ID == imange.ProductID)
+                                                        {
+                                                            <div class="carousel-item @(imange == p.Images.First() ? "active" : "")">
+                                                                <img class="card-img-top" src="@imange.image">
+                                                            </div>
+                                                        }
+                                                    }
+                                                </div>
+                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -149,6 +154,6 @@
                 </div>
 
             </div>
-        }
-    }
+            
+
 }
