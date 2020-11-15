@@ -229,9 +229,9 @@
             @Html.ActionLink("Sign Up", "SignUp", "Users")
         </p>
         <div>
-            @*<button class="loginBtn loginBtn--facebook">
-                Login with Facebook
-            </button>*@
+            <button class="loginBtn loginBtn--facebook">
+                    @Html.ActionLink("Login with facebook", "Facebook", "Users")
+            </button>
             <button class="loginBtn loginBtn--google" id="btnLogin" onclick="login()" style="background-color:#e82121"><i class="fa fa-google-plus"></i> Sign in with Google</button>
 
         </div>

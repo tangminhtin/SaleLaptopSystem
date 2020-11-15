@@ -8,6 +8,8 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
+using Facebook;
 using SaleLaptopSystem.DAL;
 using SaleLaptopSystem.Models;
 
@@ -201,5 +203,123 @@ namespace SaleLaptopSystem.Controllers
             }
             base.Dispose(disposing);
         }
+        private Uri RediredtUri
+
+        {
+
+            get
+
+            {
+
+                var uriBuilder = new UriBuilder(Request.Url);
+
+                uriBuilder.Query = null;
+
+                uriBuilder.Fragment = null;
+
+                uriBuilder.Path = Url.Action("FacebookCallback");
+
+                return uriBuilder.Uri;
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        [AllowAnonymous]
+
+        public ActionResult Facebook()
+
+        {
+
+            var fb = new FacebookClient();
+
+            var loginUrl = fb.GetLoginUrl(new
+
+            {
+
+
+
+
+                client_id = "2624477971146310",
+
+                client_secret = "7fdcecdbff488032054414bb8073c9a4",
+
+                redirect_uri = RediredtUri.AbsoluteUri,
+
+                response_type = "code",
+
+                scope = "email"
+
+
+
+            });
+
+            return Redirect(loginUrl.AbsoluteUri);
+
+        }
+
+
+
+
+        public ActionResult FacebookCallback(string code)
+
+        {
+
+            var fb = new FacebookClient();
+
+            dynamic result = fb.Post("oauth/access_token", new
+
+            {
+
+                client_id = "2624477971146310",
+
+                client_secret = "7fdcecdbff488032054414bb8073c9a4",
+
+                redirect_uri = RediredtUri.AbsoluteUri,
+
+                code = code
+
+
+
+
+            });
+
+            var accessToken = result.access_token;
+
+            Session["AccessToken"] = accessToken;
+
+            fb.AccessToken = accessToken;
+
+            dynamic me = fb.Get("me?fields=link,first_name,currency,last_name,email,gender,locale,timezone,verified,picture,age_range");
+
+            //string email = me.email;
+            var name = me.first_name+ me.last_name;
+            var picture = me.picture.data.url;
+            var email = me.email;
+            User us = new User(name, email, picture);
+            Session["User"] = us;
+            return RedirectToAction("Index", "Home");
+           
+
+            //FormsAuthentication.SetAuthCookie(email, false);
+
+            //return RedirectToAction("Index", "Home");
+
+        }
+
     }
 }
