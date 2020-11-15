@@ -21,18 +21,18 @@
                         <!--Card image-->
                         <div class="view overlay">
 
-                            <div class="carousel slide" data-ride="carousel" data-interval="1000" style="width:350px; height: 400px;">
+                            <div class="carousel slide" data-ride="carousel" data-interval="2000" style="width:350px; height: 400px;">
                                 <div class="carousel-inner">
                                     @foreach (var imange in p.Images)
                                     {
                                         if (p.ID == imange.ProductID)
                                         {
-                                            <a href="/ProductDetails/Details/@p.ProductDetailID">
+                                            
                                                 <div class="carousel-item @(imange == p.Images.First() ? "active" : "")">
                                                     <img class="card-img-top" src="@imange.image">
                                                     @*style=" padding-left: 40px; padding-top: 40px; width: 330px;*@
                                                 </div>
-                                            </a>
+                                     
                                         }
                                     }
                                 </div>

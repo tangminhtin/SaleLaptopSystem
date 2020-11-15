@@ -3,6 +3,202 @@
 @{
     ViewBag.Title = "Login";
 }
+<style>
+    body {
+        padding: 2em;
+    }
+
+
+    /* Shared */
+    .loginBtn {
+        box-sizing: border-box;
+        position: relative;
+        /* width: 13em;  - apply for fixed size */
+        margin: 0.2em;
+        padding: 0 15px 0 46px;
+        border: none;
+        text-align: left;
+        line-height: 34px;
+        white-space: nowrap;
+        border-radius: 0.2em;
+        font-size: 16px;
+        color: #FFF;
+    }
+
+        .loginBtn:before {
+            content: "";
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 34px;
+            height: 100%;
+        }
+
+        .loginBtn:focus {
+            outline: none;
+        }
+
+        .loginBtn:active {
+            box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+        }
+
+
+    /* Facebook */
+    .loginBtn--facebook {
+        background-color: #4C69BA;
+        background-image: linear-gradient(#4C69BA, #3B55A0);
+        /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+        text-shadow: 0 -1px 0 #354C8C;
+        margin-left: 20px;
+    }
+
+        .loginBtn--facebook:before {
+            border-right: #364e92 1px solid;
+            background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+        }
+
+        .loginBtn--facebook:hover,
+        .loginBtn--facebook:focus {
+            background-color: #5B7BD5;
+            background-image: linear-gradient(#5B7BD5, #4864B1);
+        }
+
+
+    /* Google */
+    .loginBtn--google {
+        /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+        background: #DD4B39;
+        margin-left: 170px;
+    }
+
+        .loginBtn--google:before {
+            border-right: #BB3F30 1px solid;
+            background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+        }
+
+        .loginBtn--google:hover,
+        .loginBtn--google:focus {
+            background: #E74B37;
+        }
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript">
+            var OAUTHURL = 'https://accounts.google.com/o/oauth2/auth?';
+            var VALIDURL = 'https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=';
+            var SCOPE = 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email';
+            var CLIENTID = '145814068621-s79nn5lu0de4ondvpnm350ud34p4t22q.apps.googleusercontent.com';
+            var REDIRECT = 'https://localhost:44305/Users/Login';
+               //var LOGOUT = 'https://localhost:44305/Users/Login';
+            var TYPE = 'token';
+            var _url = OAUTHURL + 'scope=' + SCOPE + '&client_id=' + CLIENTID + '&redirect_uri=' + REDIRECT + '&response_type=' + TYPE;
+            var acToken;
+            var tokenType;
+            var expiresIn;
+            var user;
+            var loggedIn = false;
+
+            function login() {
+
+                var win = window.open(_url, "windowname1", 'width=800, height=600');
+                var pollTimer = window.setInterval(function () {
+                    try {
+                        console.log(win.document.URL);
+                        if (win.document.URL.indexOf(REDIRECT) != -1) {
+                            window.clearInterval(pollTimer);
+                            var url = win.document.URL;
+                            acToken = gup(url, 'access_token');
+                            tokenType = gup(url, 'token_type');
+                            expiresIn = gup(url, 'expires_in');
+
+                            win.close();
+                            debugger;
+                            validateToken(acToken);
+                            
+                        }
+                    }
+                    catch (e) {
+
+                    }
+                }, 500);
+               
+            }
+
+            function gup(url, name) {
+                namename = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+                var regexS = "[\\#&]" + name + "=([^&#]*)";
+                var regex = new RegExp(regexS);
+                var results = regex.exec(url);
+                if (results == null)
+                    return "";
+                else
+                    return results[1];
+            }
+
+            function validateToken(token) {
+
+                getUserInfo();
+                $.ajax(
+
+                    {
+
+                        url: VALIDURL + token,
+                        data: null,
+                        success: function (responseText) {
+
+
+                        },
+
+                    });
+
+            }
+            
+            function getUserInfo() {
+
+
+                $.ajax({
+
+                    url: 'https://www.googleapis.com/oauth2/v1/userinfo?access_token=' + acToken,
+                    data: null,
+                    success: function (resp) {
+                        user = resp;
+                        console.log(user);
+                        window.location.href = "/Users/Logingg/?name=" + user.name + "&&picture=" + user.picture + "&&email=" + user.email ;
+                        //$('#uname').html('Welcome ' + user.name);
+                        //$('#uemail').html('Email: ' + user.email)
+                        //$('#imgHolder').attr('src', user.picture);
+                        
+                      
+                    },
+
+
+                }),
+
+                $.ajax({
+
+                    url: '/Home/Index/',
+
+                    type: 'POST',
+                    data: {
+                        email: user.email,
+                        name: user.name,
+                        gender: user.gender,
+                        lastname: user.lastname,
+                        location: user.location
+                    },
+                    success: function () {
+                        window.location.href = "/Home/Index/";
+                    },
+
+                    dataType: "test"
+
+                });
+
+
+            }
+
+</script>
 
 @Styles.Render("~/Content/css/login.css")
 <h3 class="btn-danger btn-block rounded-pill text-center">@ViewBag.Error</h3>
@@ -32,6 +228,13 @@
             Not a member?
             @Html.ActionLink("Sign Up", "SignUp", "Users")
         </p>
+        <div>
+            @*<button class="loginBtn loginBtn--facebook">
+                Login with Facebook
+            </button>*@
+            <button class="loginBtn loginBtn--google" id="btnLogin" onclick="login()" style="background-color:#e82121"><i class="fa fa-google-plus"></i> Sign in with Google</button>
+
+        </div>
         <button value="Login" type="submit" class="btn btn-pink btn-block rounded-pill">Login</button>
 
     }

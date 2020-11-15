@@ -6,6 +6,7 @@
     ViewBag.Title = "Home";
 
 }
+
 @Styles.Render("~/Content/css/index.css")
 @section scripts{
     <script>
@@ -22,6 +23,9 @@
         @TempData["AlertMessage"]
     </div>
 }
+@{ 
+
+}
 <h1 class="text-center btn-block btn-pink rounded-pill">Giá sốc cuối tuần</h1>
 <div class="row row-cols-1 row-cols-md-3">
     @foreach (var p in Model)
@@ -34,18 +38,17 @@
                     <!--Card image-->
                     <div class="view overlay">
 
-                        <div class="carousel slide" data-ride="carousel" data-interval="1000" style="width:350px; height: 400px;">
+                        <div class="carousel slide" data-ride="carousel" data-interval="2000" style="width:350px; height: 400px;">
                             <div class="carousel-inner">
                                 @foreach (var imange in p.Images)
                                 {
                                     if (p.ID == imange.ProductID)
                                     {
-                                        <a href="/ProductDetails/Details/@p.ProductDetailID">
                                             <div class="carousel-item @(imange == p.Images.First() ? "active" : "")">
                                                 <img class="card-img-top" src="@imange.image">
                                                 @*style=" padding-left: 40px; padding-top: 40px; width: 330px;*@
                                             </div>
-                                            </a>
+                                    
                                             }
                                         }
                                     </div>

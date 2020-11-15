@@ -34,7 +34,7 @@
 
 
 
-                    @if (Session["User"] == null)
+                    @if (Session["User"] == null )
                     {
                         <li class="nav-item">@Html.ActionLink("Login", "Login", "Users", null, new { @class = "nav-link" })</li>
                         <li class="nav-item">@Html.ActionLink("Sign Up", "SignUp", "Users", null, new { @class = "nav-link" })</li>

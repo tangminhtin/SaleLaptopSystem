@@ -38,6 +38,15 @@ namespace SaleLaptopSystem.Controllers
             }
             return View(    );
         }
+        public ActionResult Logingg()
+        {
+           var name = Request.Params["name"];
+            var picture = Request.Params["picture"];
+            var email = Request.Params["email"];
+            User us = new User(name, email, picture);
+            Session["User"] = us; 
+            return RedirectToAction("Index","Home");
+        }
         public ActionResult SignUp()
         {
             return View();

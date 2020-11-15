@@ -8,6 +8,17 @@ namespace SaleLaptopSystem.Models
 {
     public class User
     {
+        public User(string fullname, string email, string image)
+        {
+            Fullname = fullname;
+            Email = email;
+            Image = image;
+        }
+
+        public User()
+        {
+        }
+
         public int ID { get; set; }
         [Required]
         public string Fullname { get; set; }
