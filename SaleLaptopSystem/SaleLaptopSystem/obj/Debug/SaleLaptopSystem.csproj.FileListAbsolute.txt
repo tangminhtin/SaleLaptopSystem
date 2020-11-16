@@ -948,3 +948,5 @@ E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList
 E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.xml
 E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.dll
 E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.xml
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.dll
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.xml

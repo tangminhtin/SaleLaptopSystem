@@ -60,9 +60,8 @@
                             </p>
                         </div>
                         <div class="text-center">
-
-                            <button type="button" class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Readmore", "Details", "ProductDetails", new { id = p.ProductDetailID }, null)</button>
-                            <button type="button" class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Add Cart", "Cart", "Orders", new { prodID = p.ID }, null)</button>
+                            <a href="/ProductDetails/Details?id=@p.ProductDetailID"><button type="button" class="btn btn-pink btn-md rounded-pill">Readmore</button></a>
+                            <a href="/Orders/Cart?prodID=@p.ID"><button class="btn btn-pink btn-md rounded-pill">Add Cart</button></a>
                         </div>
                     </div>
                     <!-- Card -->

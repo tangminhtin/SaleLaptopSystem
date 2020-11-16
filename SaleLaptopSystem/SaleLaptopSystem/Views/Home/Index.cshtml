@@ -26,64 +26,60 @@
 @{ 
 
 }
-<h1 class="text-center btn-block btn-pink rounded-pill">Giá sốc cuối tuần</h1>
+<h1 class="text-center btn-block btn-pink rounded-pill">Last week sale</h1>
 <div class="row row-cols-1 row-cols-md-3">
     @foreach (var p in Model)
     {
-        
+        <div class="col mb-4">
+            <!-- Card -->
+            <div class="card card-product">
+                <!--Card image-->
+                <div class="view overlay">
 
-            <div class="col mb-4">
-                <!-- Card -->
-                <div class="card card-product">
-                    <!--Card image-->
-                    <div class="view overlay">
-
-                        <div class="carousel slide" data-ride="carousel" data-interval="2000" style="width:350px; height: 400px;">
-                            <div class="carousel-inner">
-                                @foreach (var imange in p.Images)
+                    <div class="carousel slide" data-ride="carousel" data-interval="2000" style="width:350px; height: 400px;">
+                        <div class="carousel-inner">
+                            @foreach (var imange in p.Images)
+                            {
+                                if (p.ID == imange.ProductID)
                                 {
-                                    if (p.ID == imange.ProductID)
-                                    {
-                                            <div class="carousel-item @(imange == p.Images.First() ? "active" : "")">
-                                                <img class="card-img-top" src="@imange.image">
-                                                @*style=" padding-left: 40px; padding-top: 40px; width: 330px;*@
-                                            </div>
-                                    
-                                            }
-                                        }
+                                    <div class="carousel-item @(imange == p.Images.First() ? "active" : "")">
+                                        <img class="card-img-top" src="@imange.image">
+                                        @*style=" padding-left: 40px; padding-top: 40px; width: 330px;*@
                                     </div>
-                        </div>
+                                    }
+                                }
+                         </div>
+                    </div>
 
 
                     
-                    </div>
-                    <!--Card content-->
-                    <div class="card-body">
-                        <h4 class="card-title">@p.Name</h4>
-                        <h5>
-                            @if (p.Discount > 1)
-                            {
-                                <span class="red-text">$@Html.DisplayName(p.Price.ToString())đ</span> <span class="discount">$@Html.DisplayName(p.Discount.ToString()) đ</span>
-                            }
-                            else
-                            {
-                                <span class="red-text">$@Html.DisplayName(p.Price.ToString())đ</span>
-                            }
-
-                        </h5>
-                        <hr>
-                        <p class="card-text purple-text">
-                            @p.Features
-                        </p>
-                    </div>
-                    <div class="text-center">
-
-                        <button type="button" class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Readmore", "Details", "ProductDetails", new { id = p.ProductDetailID }, null)</button>
-                        <button class="btn btn-pink btn-md rounded-pill">@Html.ActionLink("Add Cart", "Cart", "Orders", new { prodID = p.ID }, null)</button>
-                    </div>
                 </div>
-                <!-- Card -->
+                <!--Card content-->
+                <div class="card-body">
+                    <h4 class="card-title">@p.Name</h4>
+                    <h5>
+                        @if (p.Discount > 1)
+                        {
+                            <span class="red-text">$@Html.DisplayName(p.Price.ToString())đ</span> <span class="discount">$@Html.DisplayName(p.Discount.ToString()) đ</span>
+                        }
+                        else
+                        {
+                            <span class="red-text">$@Html.DisplayName(p.Price.ToString())đ</span>
+                        }
+
+                    </h5>
+                    <hr>
+                    <p class="card-text purple-text">
+                        @p.Features
+                    </p>
+                </div>
+                <div class="text-center">
+                    <a href="/ProductDetails/Details?id=@p.ProductDetailID"><button type="button" class="btn btn-pink btn-md rounded-pill">Readmore</button></a>
+                    <a href="/Orders/Cart?prodID=@p.ID"><button class="btn btn-pink btn-md rounded-pill">Add Cart</button></a>
+                </div>
             </div>
+            <!-- Card -->
+        </div>
 
   
     }
@@ -91,7 +87,7 @@
 </div>
 Page @(ViewBag.Home.Count < ViewBag.Home.PageNumber ? 0 : ViewBag.Home.PageNumber) of @ViewBag.Home.PageCount
 
-@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort }));
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort })) 
 
 
 
