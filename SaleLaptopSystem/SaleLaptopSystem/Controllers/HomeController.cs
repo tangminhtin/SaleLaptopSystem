@@ -38,9 +38,6 @@ namespace SaleLaptopSystem.Controllers
 
             return View();
         }
-        
-
-        
 
     }
 }

@@ -16,10 +16,10 @@ namespace SaleLaptopSystem.Controllers
         private SaleLaptopSystemContext db = new SaleLaptopSystemContext();
 
         // GET: Comments
-        public ActionResult Index()
+        public ActionResult Index(int? prodID )
         {
-            var comments = db.Comments.Include(c => c.Product).Include(c => c.User);
-            return View(comments.ToList());
+            
+            return PartialView();
         }
 
         // GET: Comments/Details/5

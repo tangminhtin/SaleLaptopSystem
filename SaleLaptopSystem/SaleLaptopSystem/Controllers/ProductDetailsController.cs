@@ -26,94 +26,47 @@ namespace SaleLaptopSystem.Controllers
         {
             if (id == null)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                return Redirect("/");
             }
             ProductDetail productDetail = db.ProductDetails.Find(id);
             if (productDetail == null)
             {
                 return RedirectToAction("/Home/Index");
             }
+
+            int proId = (int)id;
+            var userComment = from com in db.Comments
+                              join usr in db.Users
+                              on com.UserID equals usr.ID
+                              where com.ProductID == proId
+                              select new UserComment()
+                              {
+                                  Fullname = usr.Fullname,
+                                  Image = usr.Image,
+                                  Content = com.Content,
+                                  Date = com.date,
+                                  Accept = com.Accept
+                              };
+            ViewBag.UserComment = userComment;
+            ViewBag.proId = proId;
             return View(productDetail);
         }
 
-        // GET: ProductDetails/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ProductDetails/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Processor,RAM,Screen,Storage,Graphic,Size,OS,Video,Connection,Keyboard,Battery")] ProductDetail productDetail)
+        public void AddComment()
         {
-            if (ModelState.IsValid)
-            {
-                db.ProductDetails.Add(productDetail);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
-            return View(productDetail);
-        }
-
-        // GET: ProductDetails/Edit/5
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            ProductDetail productDetail = db.ProductDetails.Find(id);
-            if (productDetail == null)
-            {
-                return HttpNotFound();
-            }
-            return View(productDetail);
-        }
-
-        // POST: ProductDetails/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Processor,RAM,Screen,Storage,Graphic,Size,OS,Video,Connection,Keyboard,Battery")] ProductDetail productDetail)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(productDetail).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(productDetail);
-        }
-
-        // GET: ProductDetails/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            ProductDetail productDetail = db.ProductDetails.Find(id);
-            if (productDetail == null)
-            {
-                return HttpNotFound();
-            }
-            return View(productDetail);
-        }
-
-        // POST: ProductDetails/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            ProductDetail productDetail = db.ProductDetails.Find(id);
-            db.ProductDetails.Remove(productDetail);
+            string content = Request["content"];
+            string userID = Request["userID"];
+            string prodId = Request["productID"];
+            Comment comment = new Comment();
+            comment.Content = content;
+            comment.date = DateTime.Now;
+            comment.Accept = true;
+            comment.Active = true;
+            comment.UserID = Convert.ToInt32(userID);
+            comment.ProductID = Convert.ToInt32(prodId);
+            db.Comments.Add(comment);
             db.SaveChanges();
-            return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)

@@ -1,8 +1,18 @@
 ﻿@model SaleLaptopSystem.Models.ProductDetail
-
+@using SaleLaptopSystem.Models
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Product Details";
 }
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
 
 @foreach (var p in Model.Products)
@@ -37,7 +47,6 @@
                                             }
                                         </div>
                                     </div>
-                                           
                                 </div>
                             </div>
                         </div>
@@ -140,7 +149,7 @@
                                 <a href="/Orders/Cart?prodID=@p.ID"><button type="button" class="btn btn-pink btn-md rounded-pill text-white">Add Cart</button></a>
                                 <a href="/"><button class="btn btn-pink btn-md rounded-pill text-white">Back to Home Page</button></a>
                             </div>
-
+                            
                         </dl>
                     </div>
                 </div>
@@ -149,6 +158,103 @@
         </div>
 
     </div>
-            
-
 }
+
+<div class="container">
+    <div class="card" style="background-color:lightpink">
+        <div class="container" style="background-color:azure">
+            <h1 class="mt-3">Comments</h1>
+            <div id="content">
+                @foreach (var uc in ViewBag.UserComment)
+                {
+                    <div class="media">
+                        <img style="width: 80px; height: 80px" class="d-flex rounded-circle avatar z-depth-1-half mb-3 mx-auto" src="@uc.Image" onerror="this.src='https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg';" alt="Generic placeholder image">
+                        <div class="media-body ml-md-3">
+                            <p><b class="mt-0 font-weight-bold">@uc.Fullname</b><small class="ml-md-3">on @uc.Date</small></p>
+                            <p>@uc.Content</p>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            @if (Session["User"] != null)
+            {
+                User us = (User)Session["User"];
+                <div class="media d-block d-md-flex mt-3 shadow-textarea">
+                    <img id="usrImage" style="width: 80px; height: 80px" class="d-flex rounded-circle avatar z-depth-1-half mb-3 mx-auto" src="@us.Image"
+                         onerror="this.src='https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg';"
+                         alt="Generic placeholder image">
+                    <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                        <h5 id="usr" class="mt-0 font-weight-bold blue-text mb-3">@us.Fullname</h5>
+                        <div class="form-group basic-textarea rounded-corners mb-md-0 mb-4">
+                            <textarea id="comContent" class="form-control z-depth-1" rows="3" placeholder="Write your comment..."></textarea>
+                        </div>
+                        <input type="hidden" id="userID" value="@us.ID" />
+                        <input type="hidden" id="productID" value="@ViewBag.proId" />
+                    </div>
+                </div>
+                <button id="send" class="btn btn-pink btn-md rounded-pill text-white float-right mb-5">Send comment</button>
+            }
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/Scripts/js/comment.js")
+
+<script>
+    const content = document.getElementById("content");
+    const btnSend = document.getElementById("send");
+    const comContent = document.getElementById("comContent");
+    const usr = document.getElementById("usr");
+    const usrImage = document.getElementById("usrImage");
+
+    function sendComment() {
+        var media = document.createElement("div");
+        media.className = "media";
+        content.appendChild(media);
+
+        var img = document.createElement("img");
+        img.className = "d-flex rounded-circle avatar z-depth-1-half mb-3 mx-auto";
+        img.style.width = "80px";
+        img.style.height = "80px";
+        img.src = usrImage.src;
+        media.appendChild(img);
+
+        var body = document.createElement("div");
+        body.className = "media-body ml-md-3";
+        media.appendChild(body);
+
+        var p = document.createElement('p');
+        body.appendChild(p);
+
+        var b = document.createElement('b');
+        b.className = "mt-0 font-weight-bold";
+        b.textContent = usr.textContent;
+        p.appendChild(b);
+
+        var small = document.createElement('small');
+        small.className = 'ml-md-3';
+        small.textContent = "on " + new Date();
+        p.appendChild(small);
+
+        var pContent = document.createElement('p');
+        pContent.textContent = comContent.value;
+        body.appendChild(pContent);
+        
+        $.ajax({
+            type: "POST",
+            url: "/ProductDetails/AddComment",
+            data: {
+                content: comContent.value,
+                userID: $('#userID').val(),
+                productID: $('#productID').val()
+            }
+        });
+        document.querySelector("#comContent").value = '';
+    }
+
+
+    btnSend.addEventListener('click', sendComment);
+
+
+</script>

@@ -820,14 +820,12 @@ H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSy
 H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CoreCompileInputs.cache
 H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
 H:\A Study Documents\C#\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
-C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csprojAssemblyReference.cache
-C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitialCreate.resources
-C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitalDatabase.resources
-C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.UserValidation.resources
-C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.GenerateResource.cache
-C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CoreCompileInputs.cache
-C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
-C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
+E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.dll
+E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.dll
+E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.xml
+E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.xml
+E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.dll
+E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.xml
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.dll.config
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.dll
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.pdb
@@ -883,6 +881,7 @@ C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLapto
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Antlr3.Runtime.dll
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.dll
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.dll
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Core.dll
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Owin.dll
@@ -912,6 +911,7 @@ C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLapto
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.dll
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Razor.dll
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\WebGrease.dll
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.xml
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.xml
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.xml
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Net.Http.Formatting.xml
@@ -941,12 +941,11 @@ C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLapto
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitialCreate.resources
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitalDatabase.resources
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.UserValidation.resources
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.GenerateResource.cache
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CoreCompileInputs.cache
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CopyComplete
-E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.dll
-E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.dll
-E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.xml
-E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.xml
-E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.dll
-E:\c lab\LAYMOI\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.xml
-C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.dll
-C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.xml
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
