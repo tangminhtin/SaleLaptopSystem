@@ -38,15 +38,35 @@ namespace SaleLaptopSystem.Controllers
             {
                 ViewBag.Error = "Your username or password incorrect!";
             }
-            return View(    );
+            return View();
         }
         public ActionResult Logingg()
         {
-           var name = Request.Params["name"];
-            var picture = Request.Params["picture"];
-            var email = Request.Params["email"];
-            User us = new User(name, email, picture);
-            Session["User"] = us; 
+           string name = Request.Params["name"];
+            string picture = Request.Params["picture"];
+            string email = Request.Params["email"];
+            User us = new User();
+            if (db.Users.FirstOrDefault(u => u.Email.Equals(email) && u.Address.Equals("Google")) == null)
+            {
+                us.Password = MD5Hash(us.Email + "Google");
+                us.Role = "user";
+                us.Active = true;
+                us.Phone = "8888889";
+                us.Fullname = name;
+                us.Image = picture;
+                us.Address = "Google";
+                us.Email = email;
+                db.Users.Add(us);
+                db.SaveChanges();
+                Session["User"] = us;
+
+            }
+            else
+            {
+                var users = db.Users;
+                var usr = users.FirstOrDefault(u => u.Email.Equals(email) && u.Address.Equals("Google"));
+                Session["User"] = usr;
+            } 
             return RedirectToAction("Index","Home");
         }
         public ActionResult SignUp()
@@ -247,6 +267,9 @@ namespace SaleLaptopSystem.Controllers
 
             var fb = new FacebookClient();
 
+
+
+
             var loginUrl = fb.GetLoginUrl(new
 
             {
@@ -307,13 +330,33 @@ namespace SaleLaptopSystem.Controllers
             dynamic me = fb.Get("me?fields=link,first_name,currency,last_name,email,gender,locale,timezone,verified,picture,age_range");
 
             //string email = me.email;
-            var name = me.first_name+ me.last_name;
-            var picture = me.picture.data.url;
-            var email = me.email;
-            User us = new User(name, email, picture);
-            Session["User"] = us;
+            string name = me.first_name+ me.last_name;
+            string picture = me.picture.data.url;
+            string email = me.email;
+            User us = new User();
+            if (db.Users.FirstOrDefault(u => u.Email.Equals(email)&& u.Address.Equals("Facebook")) == null)
+                {
+                    us.Password = MD5Hash(us.Email+"FaceBook");
+                    us.Role = "user";
+                    us.Active = true;
+                    us.Phone = "8888889";
+                    us.Fullname = name;
+                    us.Image = picture;
+                    us.Address = "Facebook";
+                    us.Email = email;
+                    db.Users.Add(us);
+                    db.SaveChanges();
+                    Session["User"] = us;
+                 
+            } else
+                {       
+                 var users = db.Users;
+                var usr = users.FirstOrDefault(u => u.Email.Equals(email) && u.Address.Equals("Facebook"));
+                 Session["User"] = usr;
+            }
+
             return RedirectToAction("Index", "Home");
-           
+
 
             //FormsAuthentication.SetAuthCookie(email, false);
 
