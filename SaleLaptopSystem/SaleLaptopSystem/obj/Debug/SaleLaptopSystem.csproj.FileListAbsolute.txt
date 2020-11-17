@@ -949,3 +949,4 @@ C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLapto
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CopyComplete
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
+C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csprojAssemblyReference.cache
