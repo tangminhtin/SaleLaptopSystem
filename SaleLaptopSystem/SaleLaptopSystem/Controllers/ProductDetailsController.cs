@@ -38,14 +38,15 @@ namespace SaleLaptopSystem.Controllers
             var userComment = from com in db.Comments
                               join usr in db.Users
                               on com.UserID equals usr.ID
-                              where com.ProductID == proId
+                              where com.ProductID == proId && com.Accept == true
                               select new UserComment()
                               {
                                   Fullname = usr.Fullname,
                                   Image = usr.Image,
                                   Content = com.Content,
                                   Date = com.date,
-                                  Accept = com.Accept
+                                  Accept = com.Accept,
+                                  Role = usr.Role
                               };
             ViewBag.UserComment = userComment;
             ViewBag.proId = proId;

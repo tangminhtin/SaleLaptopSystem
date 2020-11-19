@@ -12,5 +12,6 @@ namespace SaleLaptopSystem.Models
         public string Content { get; set; }
         public DateTime Date { get; set; }
         public bool Accept { get; set; }
+        public string Role { get; set; }
     }
 }

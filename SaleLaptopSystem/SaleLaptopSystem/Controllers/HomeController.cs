@@ -15,12 +15,12 @@ namespace SaleLaptopSystem.Controllers
         public ActionResult Index(int? page, string sortOrder)
         {
             ViewBag.CurrentSort = sortOrder;
-            int pageSize = 3;
+            int pageSize = 6;
             int pageNumber = (page ?? 1);
             ViewBag.Home = db.Products.ToList().ToPagedList(pageNumber , pageSize);
-            ViewBag.Apple = db.Products.Where(x => x.BrandID == 3).ToList().ToPagedList(pageNumber, pageSize);
             ViewBag.Asus = db.Products.Where(x => x.BrandID == 1).ToList().ToPagedList(pageNumber, pageSize);
             ViewBag.Dell = db.Products.Where(x => x.BrandID == 2).ToList().ToPagedList(pageNumber, pageSize);
+            ViewBag.Apple = db.Products.Where(x => x.BrandID == 3).ToList().ToPagedList(pageNumber, pageSize);
             ViewBag.HP = db.Products.Where(x => x.BrandID == 4).ToList().ToPagedList(pageNumber, pageSize);
             return View(ViewBag.Home);
         }

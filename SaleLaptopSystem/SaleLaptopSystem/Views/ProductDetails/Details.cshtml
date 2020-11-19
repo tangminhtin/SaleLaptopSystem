@@ -165,12 +165,19 @@
         <div class="container" style="background-color:azure">
             <h1 class="mt-3">Comments</h1>
             <div id="content">
-                @foreach (var uc in ViewBag.UserComment)
+                @foreach (UserComment uc in ViewBag.UserComment)
                 {
                     <div class="media">
                         <img style="width: 80px; height: 80px" class="d-flex rounded-circle avatar z-depth-1-half mb-3 mx-auto" src="@uc.Image" onerror="this.src='https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg';" alt="Generic placeholder image">
                         <div class="media-body ml-md-3">
-                            <p><b class="mt-0 font-weight-bold">@uc.Fullname</b><small class="ml-md-3">on @uc.Date</small></p>
+                            <p>
+                                <b class="mt-0 font-weight-bold">@uc.Fullname</b>
+                                @if(uc.Role.ToLower().Equals("admin"))
+                                {
+                                    <span class="alert-warning visible-md-inline-block">admin</span>
+                                }
+                                <small class="ml-md-3">on @uc.Date</small>
+                            </p>
                             <p>@uc.Content</p>
                         </div>
                     </div>
