@@ -21,7 +21,7 @@
                         <!--Card image-->
                         <div class="view overlay">
 
-                            <div class="carousel slide" data-ride="carousel" data-interval="2000" style="width:350px; height: 400px;">
+                            <div class="carousel slide" data-ride="carousel" data-interval="2000" style="width:350px; height: 350px;">
                                 <div class="carousel-inner">
                                     @foreach (var imange in p.Images)
                                     {
@@ -41,7 +41,7 @@
                         </div>
                         <!--Card content-->
                         <div class="card-body">
-                            <h4 class="card-title">@Html.DisplayName(p.Name)</h4>
+                            <h4 class="card-title" style="width:300px; height: 50px;">@Html.DisplayName(p.Name)</h4>
                             <h5>
                                 @if (p.Discount > 1)
                                 {
@@ -55,15 +55,17 @@
 
                             </h5>
                             <hr>
-                            <p class="card-text purple-text">
-                                @Html.DisplayName(p.Features)
-                            </p>
+                            <div class="card-title" style="width:300px; height: 120px;">
+                                <p class="card-text purple-text">
+                                    @Html.DisplayName(p.Features)
+                                </p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="/ProductDetails/Details?id=@p.ProductDetailID"><button type="button" class="btn btn-pink btn-md rounded-pill">Readmore</button></a>
+                                <a href="/Orders/Cart?prodID=@p.ID"><button class="btn btn-pink btn-md rounded-pill">Add Cart</button></a>
+                            </div>
                         </div>
-                        <div class="text-center">
-                            <a href="/ProductDetails/Details?id=@p.ProductDetailID"><button type="button" class="btn btn-pink btn-md rounded-pill">Readmore</button></a>
-                            <a href="/Orders/Cart?prodID=@p.ID"><button class="btn btn-pink btn-md rounded-pill">Add Cart</button></a>
-                        </div>
-                    </div>
                     <!-- Card -->
                 </div>
         

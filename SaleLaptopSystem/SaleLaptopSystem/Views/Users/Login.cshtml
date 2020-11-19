@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Login";
+    
 }
 <style>
     body {
@@ -46,11 +47,11 @@
 
     /* Facebook */
     .loginBtn--facebook {
-        background-color: #4C69BA;
-        background-image: linear-gradient(#4C69BA, #3B55A0);
+        background-color: #df8989;
+        background-image: linear-gradient(#ffaec8, #FFF);
         /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
         text-shadow: 0 -1px 0 #354C8C;
-        margin-left: 20px;
+        margin-left: 150px;
     }
 
         .loginBtn--facebook:before {
@@ -60,26 +61,28 @@
 
         .loginBtn--facebook:hover,
         .loginBtn--facebook:focus {
-            background-color: #5B7BD5;
-            background-image: linear-gradient(#5B7BD5, #4864B1);
+            background-color: #df8989;
+            background-image: linear-gradient(#ffaec8, #FFF);
         }
 
 
     /* Google */
     .loginBtn--google {
         /*font-family: "Roboto", Roboto, arial, sans-serif;*/
-        background: #DD4B39;
-        margin-left: 170px;
+        background: #ffaec8;
+        background-image: linear-gradient(#ffaec8, #FFF);
+        text-shadow: 0 -1px 0 #e21e1e;
+        margin-left: 40px;
     }
 
         .loginBtn--google:before {
-            border-right: #BB3F30 1px solid;
-            background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+            border-right: #e21e1e 1px solid;
+            background: 6px 6px no-repeat;
         }
 
         .loginBtn--google:hover,
         .loginBtn--google:focus {
-            background: #E74B37;
+            background: linear-gradient(#ffaec8, #FFF);
         }
 </style>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
@@ -199,10 +202,8 @@
             }
 
 </script>
-
 @Styles.Render("~/Content/css/login.css")
 <h3 class="btn-danger btn-block rounded-pill text-center">@ViewBag.Error</h3>
-
 <div class="row sign-up">
     <div class="col-md-4">
         <img src="~/img/login.jpg" alt="">
@@ -227,14 +228,14 @@
         <p class="text-center">
             Not a member?
             @Html.ActionLink("Sign Up", "SignUp", "Users")
-             or 
+            or
             @Html.ActionLink("Reset Password", "Reset", "Users")
         </p>
         <div>
-            <button class="loginBtn loginBtn--facebook">
-                    @Html.ActionLink("Login with facebook", "Facebook", "Users")
+            <button type="button" class="btn loginBtn--facebook btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f blue-text text-justify"></i>
+                     @Html.ActionLink("Facebook", "Facebook", "Users")
             </button>
-            <button class="loginBtn loginBtn--google" id="btnLogin" onclick="login()" style="background-color:#e82121"><i class="fa fa-google-plus"></i> Sign in with Google</button>
+            <button type="button" class="btn loginBtn--google btn-rounded mr-md-3 z-depth-1a red-text " id="btnLogin" onclick="login()" ><i class="fab fa-google-plus-g red-text mr-md-1"></i>Google</button>
 
         </div>
         <button value="Login" type="submit" class="btn btn-pink btn-block rounded-pill">Login</button>

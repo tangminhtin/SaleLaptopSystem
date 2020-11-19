@@ -950,127 +950,251 @@ C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLapto
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
 C:\Users\tangminhtin\Desktop\Project\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csprojAssemblyReference.cache
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.dll.config
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.pdb
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csc.exe
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csc.exe.config
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csc.rsp
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csi.exe
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csi.exe.config
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csi.rsp
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CSharp.Core.targets
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.Managed.Core.targets
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.AppContext.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Collections.Immutable.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Console.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Globalization.Calendars.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.Compression.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.FileSystem.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Net.Http.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Net.Sockets.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Reflection.Metadata.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.ValueTuple.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.ReaderWriter.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.XmlDocument.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.XPath.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\vbc.exe
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\vbc.exe.config
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\vbc.rsp
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\VBCSCompiler.exe
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\VBCSCompiler.exe.config
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Antlr3.Runtime.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.SqlServer.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Core.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Owin.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Cookies.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Facebook.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Google.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.OAuth.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Twitter.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Web.Infrastructure.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Newtonsoft.Json.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Owin.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Net.Http.Formatting.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Helpers.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.WebHost.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Mvc.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Optimization.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Razor.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Deployment.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Razor.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\WebGrease.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Net.Http.Formatting.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.WebHost.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Helpers.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Mvc.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Optimization.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Razor.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Deployment.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Razor.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Newtonsoft.Json.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Antlr3.Runtime.pdb
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.SqlServer.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Core.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Owin.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Facebook.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Cookies.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Google.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Twitter.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.OAuth.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csprojAssemblyReference.cache
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitialCreate.resources
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitalDatabase.resources
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.UserValidation.resources
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.GenerateResource.cache
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CoreCompileInputs.cache
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CopyComplete
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
-\\Mac\Home\Desktop\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.dll.config
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.pdb
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csc.exe
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csc.exe.config
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csc.rsp
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csi.exe
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csi.exe.config
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csi.rsp
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.Managed.Core.targets
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.AppContext.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Collections.Immutable.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Console.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Globalization.Calendars.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.Compression.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.FileSystem.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Net.Http.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Net.Sockets.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Reflection.Metadata.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.ValueTuple.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.XmlDocument.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.XPath.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\vbc.exe
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\vbc.exe.config
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\vbc.rsp
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\VBCSCompiler.exe
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\VBCSCompiler.exe.config
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Antlr3.Runtime.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.SqlServer.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Core.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Cookies.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Facebook.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Google.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.OAuth.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Twitter.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Web.Infrastructure.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Newtonsoft.Json.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Owin.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Net.Http.Formatting.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Helpers.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.WebHost.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Mvc.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Optimization.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Razor.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Deployment.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Razor.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\WebGrease.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Net.Http.Formatting.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.WebHost.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Helpers.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Mvc.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Optimization.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Razor.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Deployment.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Razor.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Newtonsoft.Json.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Antlr3.Runtime.pdb
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.SqlServer.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Core.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Facebook.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Cookies.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Google.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Twitter.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.OAuth.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitialCreate.resources
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitalDatabase.resources
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.UserValidation.resources
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.GenerateResource.cache
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CoreCompileInputs.cache
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CopyComplete
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb
+H:\A Study Documents\C#\S\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csprojAssemblyReference.cache
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.dll.config
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\SaleLaptopSystem.pdb
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csc.exe
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csc.exe.config
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csc.rsp
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csi.exe
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csi.exe.config
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\csi.rsp
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.AppContext.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Console.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.Compression.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Net.Http.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.ValueTuple.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\vbc.exe
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\vbc.exe.config
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\vbc.rsp
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\VBCSCompiler.exe
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Antlr3.Runtime.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Newtonsoft.Json.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Owin.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Net.Http.Formatting.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Helpers.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.WebHost.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Mvc.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Optimization.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Razor.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\WebGrease.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Facebook.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\PagedList.Mvc.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Net.Http.Formatting.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Http.WebHost.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Helpers.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Mvc.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Optimization.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.Razor.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Newtonsoft.Json.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Antlr3.Runtime.pdb
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csprojAssemblyReference.cache
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitialCreate.resources
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.InitalDatabase.resources
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.Migrations.UserValidation.resources
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.GenerateResource.cache
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CoreCompileInputs.cache
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.csproj.CopyComplete
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.dll
+C:\Users\tangminhtin\Desktop\Project\Demo\SaleLaptopSystem\SaleLaptopSystem\SaleLaptopSystem\obj\Debug\SaleLaptopSystem.pdb

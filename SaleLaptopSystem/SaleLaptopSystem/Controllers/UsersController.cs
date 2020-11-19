@@ -20,11 +20,47 @@ namespace SaleLaptopSystem.Controllers
     {
         private SaleLaptopSystemContext db = new SaleLaptopSystemContext();
 
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            User user = db.Users.Find(id);
+            //user.Password = MD5Hash(user.Password);
+            if (user == null)
+            {
+                return HttpNotFound();
+            }
+            return View(user);
+        }
+
+        [HttpPost]
+        public ActionResult Edit()
+        {
+            int id = Convert.ToInt32(Request["id"]);
+            string name = Request["name"];
+            string phone = Request["phone"];
+            string pass = Request["pass"];
+            string confirm = Request["confirm"];
+            string address = Request["address"];
+            User u = db.Users.FirstOrDefault(x => x.ID == id);
+            u.Fullname = name;
+            u.Phone = phone;
+            u.Password = MD5Hash(pass);
+            u.Address = address;
+
+            db.Entry(u).State = EntityState.Modified;
+            db.SaveChanges();
+            Session["update"] = "Update Successfull!";
+            //return Redirect("/");
+            return View(u);
+        }
 
         [HttpPost]
         public ActionResult Reset(int? id)
         {
-            if(Session["code"]== null)
+            if (Session["code"] == null)
             {
                 string email = Request["email"];
                 Random r = new Random();
@@ -33,7 +69,8 @@ namespace SaleLaptopSystem.Controllers
                 Session["code"] = rand;
                 Session["email"] = email;
 
-            } else
+            }
+            else
             {
                 string code = Session["code"].ToString();
                 string codeIn = Request["code"];
@@ -58,10 +95,9 @@ namespace SaleLaptopSystem.Controllers
 
         public ActionResult Reset()
         {
-            
+
             return View();
         }
-
         public ActionResult Login()
         {
             return View();
@@ -75,9 +111,10 @@ namespace SaleLaptopSystem.Controllers
             var usr = users.FirstOrDefault(u => u.Email.Equals(user.Email) && u.Password.Equals(pass));
             if (usr != null)
             {
-                Session["User"] = usr ;
+                Session["User"] = usr;
                 return Redirect("/");
-            } else
+            }
+            else
             {
                 ViewBag.Error = "Your username or password incorrect!";
             }
@@ -85,7 +122,7 @@ namespace SaleLaptopSystem.Controllers
         }
         public ActionResult Logingg()
         {
-           string name = Request.Params["name"];
+            string name = Request.Params["name"];
             string picture = Request.Params["picture"];
             string email = Request.Params["email"];
             User us = new User();
@@ -109,13 +146,13 @@ namespace SaleLaptopSystem.Controllers
                 var users = db.Users;
                 var usr = users.FirstOrDefault(u => u.Email.Equals(email) && u.Address.Equals("Google"));
                 Session["User"] = usr;
-            } 
-            return RedirectToAction("Index","Home");
+            }
+            return RedirectToAction("Index", "Home");
         }
         public ActionResult SignUp()
         {
             return View();
-        } 
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult SignUp([Bind(Include = "ID,Fullname,Password,Email,Phone,Address,Image,Role,Active")] User user)
@@ -130,7 +167,8 @@ namespace SaleLaptopSystem.Controllers
                     db.Users.Add(user);
                     db.SaveChanges();
                     return RedirectToAction("Login");
-                } else
+                }
+                else
                 {
                     ViewBag.Error = "Your account has already";
                 }
@@ -163,66 +201,6 @@ namespace SaleLaptopSystem.Controllers
                 return HttpNotFound();
             }
             return View(user);
-        }
-
-        // GET: Users/Create
-        //public ActionResult Create()
-        //{
-        //    return View();
-        //}
-
-        // POST: Users/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Create([Bind(Include = "ID,Fullname,Password,Email,Phone,Address,Image,Role,Active")] User user)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.Users.Add(user);
-        //        db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
-
-        //    return View(user);
-        //}
-
-        // GET: Users/Edit/5
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            User user = db.Users.Find(id);
-            user.Password = MD5Hash(user.Password);
-            if (user == null)
-            {
-                return HttpNotFound();
-            }
-            return View(user);
-        }
-
-        [HttpPost]
-        public ActionResult Edit()
-        {
-            int id = Convert.ToInt32(Request["id"]);
-            string name = Request["name"];
-            string phone = Request["phone"];
-            string pass = Request["pass"];
-            string confirm = Request["confirm"];
-            string address = Request["address"];
-            User u = db.Users.FirstOrDefault(x => x.ID == id);
-            u.Fullname = name;
-            u.Phone = phone;
-            u.Password = MD5Hash(pass);
-            u.Address = address;
-
-            db.Entry(u).State = EntityState.Modified;
-            db.SaveChanges();
-
-            return Redirect("/");
         }
 
         // GET: Users/Delete/5
@@ -273,171 +251,94 @@ namespace SaleLaptopSystem.Controllers
             base.Dispose(disposing);
         }
         private Uri RediredtUri
-
         {
-
             get
-
             {
-
                 var uriBuilder = new UriBuilder(Request.Url);
-
                 uriBuilder.Query = null;
-
                 uriBuilder.Fragment = null;
-
                 uriBuilder.Path = Url.Action("FacebookCallback");
-
                 return uriBuilder.Uri;
-
             }
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         [AllowAnonymous]
-
         public ActionResult Facebook()
-
         {
-
             var fb = new FacebookClient();
-
-
-
-
             var loginUrl = fb.GetLoginUrl(new
-
             {
-
-
-
-
                 client_id = "2624477971146310",
-
                 client_secret = "7fdcecdbff488032054414bb8073c9a4",
-
                 redirect_uri = RediredtUri.AbsoluteUri,
-
                 response_type = "code",
-
                 scope = "email"
-
-
-
             });
-
             return Redirect(loginUrl.AbsoluteUri);
-
         }
 
-
-
-
         public ActionResult FacebookCallback(string code)
-
         {
-
             var fb = new FacebookClient();
-
             dynamic result = fb.Post("oauth/access_token", new
-
             {
-
                 client_id = "2624477971146310",
-
                 client_secret = "7fdcecdbff488032054414bb8073c9a4",
-
                 redirect_uri = RediredtUri.AbsoluteUri,
-
                 code = code
-
-
-
-
             });
 
             var accessToken = result.access_token;
-
             Session["AccessToken"] = accessToken;
-
             fb.AccessToken = accessToken;
-
             dynamic me = fb.Get("me?fields=link,first_name,currency,last_name,email,gender,locale,timezone,verified,picture,age_range");
 
             //string email = me.email;
-            string name = me.first_name+ me.last_name;
+            string name = me.first_name + me.last_name;
             string picture = me.picture.data.url;
             string email = me.email;
             User us = new User();
-            if (db.Users.FirstOrDefault(u => u.Email.Equals(email)&& u.Address.Equals("Facebook")) == null)
-                {
-                    us.Password = MD5Hash(us.Email+"FaceBook");
-                    us.Role = "user";
-                    us.Active = true;
-                    us.Phone = "8888889";
-                    us.Fullname = name;
-                    us.Image = picture;
-                    us.Address = "Facebook";
-                    us.Email = email;
-                    db.Users.Add(us);
-                    db.SaveChanges();
-                    Session["User"] = us;
-                 
-            } else
-                {       
-                 var users = db.Users;
-                var usr = users.FirstOrDefault(u => u.Email.Equals(email) && u.Address.Equals("Facebook"));
-                 Session["User"] = usr;
+            if (db.Users.FirstOrDefault(u => u.Email.Equals(email) && u.Address.Equals("Facebook")) == null)
+            {
+                us.Password = MD5Hash(us.Email + "FaceBook");
+                us.Role = "user";
+                us.Active = true;
+                us.Phone = "8888889";
+                us.Fullname = name;
+                us.Image = picture;
+                us.Address = "Facebook";
+                us.Email = email;
+                db.Users.Add(us);
+                db.SaveChanges();
+                Session["User"] = us;
+
             }
-
+            else
+            {
+                var users = db.Users;
+                var usr = users.FirstOrDefault(u => u.Email.Equals(email) && u.Address.Equals("Facebook"));
+                Session["User"] = usr;
+            }
             return RedirectToAction("Index", "Home");
-
-
-            //FormsAuthentication.SetAuthCookie(email, false);
-
-            //return RedirectToAction("Index", "Home");
-
         }
 
         public string SendMail(string sendto, string subject, string content)
         {
-            string _from = "doubleTShop3311@gmail.com"; // Email của Sender (của bạn)
-            string _pass = "Doubletshop123"; // Mật khẩu Email của Sender (của bạn)
-            //sendto: Email receiver (người nhận)
-            //subject: Tiêu đề email
-            //content: Nội dung của email, bạn có thể viết mã HTML
-            //Nếu gửi email thành công, sẽ trả về kết quả: OK, không thành công sẽ trả về thông tin l�-i
+            string _from = "doubleTShop3311@gmail.com";
+            string _pass = "Doubletshop123";
             try
             {
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
-
                 mail.From = new MailAddress(_from);
                 mail.To.Add(sendto);
                 mail.Subject = subject;
                 mail.IsBodyHtml = true;
                 mail.Body = content;
-
                 mail.Priority = MailPriority.High;
-
                 SmtpServer.Port = 587;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(_from, _pass);
                 SmtpServer.EnableSsl = true;
-
                 SmtpServer.Send(mail);
                 return "OK";
             }
@@ -445,7 +346,7 @@ namespace SaleLaptopSystem.Controllers
             {
                 return ex.ToString();
             }
-
         }
+
     }
 }

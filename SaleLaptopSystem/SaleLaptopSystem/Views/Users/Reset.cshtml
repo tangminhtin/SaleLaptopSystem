@@ -2,21 +2,27 @@
 
 @{ ViewBag.Title = "Reset password"; }
 
-<h2 class="text-center">Reset Password</h2>
+<h1 class="text-center btn-block btn-pink rounded-pill">Reset Password</h1>
 
 @if (Session["code"] == null)
 {
-    <form class="text-center border border-light p-5" action="/Users/Reset" method="post">
+    <form style="box-shadow: 5px 10px 8px 10px #888888;
+        background: #ffebef;
+        border-radius: 30px;
+    " class="text-center border border-light p-5" action="/Users/Reset" method="post">
         <input type="text" class="form-control mb-4" placeholder="Email" name="email">
-        <button class="btn btn-info btn-block" type="submit">Get code</button>
+        <button  class="btn btn-block rounded-pill text-primary" style="background: #ffb8c9" type="submit">Get code</button>
     </form>
 } else
 {
-    <form class="text-center border border-light p-5" action="/Users/Reset" method="post">
+    <form style="box-shadow: 5px 10px 8px 10px #888888;
+        background: #ffebef;
+        border-radius: 30px;
+    " class="text-center border border-light p-5" action="/Users/Reset" method="post">
         <input type="text" class="form-control mb-4" placeholder="Enter code" name="code">
         <input type="password" class="form-control mb-4" placeholder="Password" name="pass">
         <input type="password" class="form-control mb-4" placeholder="Confirm password" name="confirm">
-        <button class="btn btn-info btn-block" type="submit">Update password</button>
+        <button  class="btn btn-block rounded-pill text-primary" style="background: #ffb8c9" type="submit">Update password</button>
     </form>
 }
 

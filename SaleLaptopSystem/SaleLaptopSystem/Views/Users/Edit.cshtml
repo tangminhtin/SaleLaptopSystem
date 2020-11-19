@@ -2,11 +2,19 @@
 
 @{ ViewBag.Title = "Update Profile"; }
 
-<h2 class="text-center">Update profile</h2>
+@if (Session["update"] != null)
+{
+    <p class="text-primary text-center rounded-pill" style="background: #d1ffdd" type="submit">@Session["update"]</p>
+    Session["update"] = null;
+}
 
+<h1 class="text-center btn-block btn-pink rounded-pill">Update Profile</h1>
 
 <!-- Default form subscription -->
-<form class="text-center border border-light p-5" action="/Users/Edit" method="post">
+<form style="box-shadow: 5px 10px 8px 10px #888888;
+        background: #ffebef;
+        border-radius: 30px;
+    " class="text-center border border-light p-5" action="/Users/Edit" method="post">
     <input type="hidden" class="form-control mb-4" placeholder="Name" value="@Model.ID" name="id">
     <input type="text" class="form-control mb-4" placeholder="Name" value="@Model.Fullname" name="name">
     <input type="email" class="form-control mb-4" placeholder="E-mail" disabled value="@Model.Email" name="email">
@@ -14,7 +22,7 @@
     <input type="password" class="form-control mb-4" placeholder="Confirm password" value="@Model.Password" name="confirm">
     <input type="text" class="form-control mb-4" placeholder="Phone" value="@Model.Phone" name="phone">
     <input type="text" class="form-control mb-4" placeholder="Address" value="@Model.Address" name="address">
-    <button class="btn btn-info btn-block" type="submit">Update</button>
+    <button class="btn btn-block rounded-pill text-primary" style="background: #ffb8c9" type="submit">Update</button>
 </form>
 <!-- Default form subscription -->
 
