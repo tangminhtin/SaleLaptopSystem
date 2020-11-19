@@ -72,6 +72,7 @@
                                 <img class="showUser rounded-circle" onerror="this.src='https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg';" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuLink" src="@((Session["User"] as User).Image)" alt="Alternate Text" />
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     @Html.ActionLink("Logout", "Logout", "Users", null, new { @class = "nav-link" })
+                                    <a href="/Users/Edit/@(((User)Session["User"]).ID)">Update Profile</a>
                                 </div>
                             </div>
                         </li>

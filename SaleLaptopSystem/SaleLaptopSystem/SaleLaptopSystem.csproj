@@ -359,6 +359,7 @@
     <Content Include="Views\Orders\Cart.cshtml" />
     <Content Include="Views\Orders\Item.cshtml" />
     <Content Include="Views\Search\Index.cshtml" />
+    <Content Include="Views\Users\Reset.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

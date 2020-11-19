@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Net.Mail;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
@@ -18,6 +19,48 @@ namespace SaleLaptopSystem.Controllers
     public class UsersController : Controller
     {
         private SaleLaptopSystemContext db = new SaleLaptopSystemContext();
+
+
+        [HttpPost]
+        public ActionResult Reset(int? id)
+        {
+            if(Session["code"]== null)
+            {
+                string email = Request["email"];
+                Random r = new Random();
+                int rand = r.Next(100000, 999999);
+                SendMail(email, "Reset your password!", "This verification code was sent to your email for help getting back into account: " + rand);
+                Session["code"] = rand;
+                Session["email"] = email;
+
+            } else
+            {
+                string code = Session["code"].ToString();
+                string codeIn = Request["code"];
+                string pass = Request["pass"];
+                string confirm = Request["confirm"];
+                string email = Session["email"].ToString();
+                if (code.Equals(codeIn))
+                {
+                    User u = db.Users.FirstOrDefault(x => x.Email.Equals(email));
+                    u.Password = MD5Hash(pass);
+                    db.Entry(u).State = EntityState.Modified;
+                    db.SaveChanges();
+                    Session["code"] = null;
+                    Session["email"] = null;
+                    return Redirect("/Users/Login");
+                }
+            }
+
+
+            return View();
+        }
+
+        public ActionResult Reset()
+        {
+            
+            return View();
+        }
 
         public ActionResult Login()
         {
@@ -153,6 +196,7 @@ namespace SaleLaptopSystem.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             User user = db.Users.Find(id);
+            user.Password = MD5Hash(user.Password);
             if (user == null)
             {
                 return HttpNotFound();
@@ -160,20 +204,25 @@ namespace SaleLaptopSystem.Controllers
             return View(user);
         }
 
-        // POST: Users/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Fullname,Password,Email,Phone,Address,Image,Role,Active")] User user)
+        public ActionResult Edit()
         {
-            if (ModelState.IsValid)
-            {
-                db.Entry(user).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(user);
+            int id = Convert.ToInt32(Request["id"]);
+            string name = Request["name"];
+            string phone = Request["phone"];
+            string pass = Request["pass"];
+            string confirm = Request["confirm"];
+            string address = Request["address"];
+            User u = db.Users.FirstOrDefault(x => x.ID == id);
+            u.Fullname = name;
+            u.Phone = phone;
+            u.Password = MD5Hash(pass);
+            u.Address = address;
+
+            db.Entry(u).State = EntityState.Modified;
+            db.SaveChanges();
+
+            return Redirect("/");
         }
 
         // GET: Users/Delete/5
@@ -364,5 +413,39 @@ namespace SaleLaptopSystem.Controllers
 
         }
 
+        public string SendMail(string sendto, string subject, string content)
+        {
+            string _from = "doubleTShop3311@gmail.com"; // Email của Sender (của bạn)
+            string _pass = "Doubletshop123"; // Mật khẩu Email của Sender (của bạn)
+            //sendto: Email receiver (người nhận)
+            //subject: Tiêu đề email
+            //content: Nội dung của email, bạn có thể viết mã HTML
+            //Nếu gửi email thành công, sẽ trả về kết quả: OK, không thành công sẽ trả về thông tin l�-i
+            try
+            {
+                MailMessage mail = new MailMessage();
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+                mail.From = new MailAddress(_from);
+                mail.To.Add(sendto);
+                mail.Subject = subject;
+                mail.IsBodyHtml = true;
+                mail.Body = content;
+
+                mail.Priority = MailPriority.High;
+
+                SmtpServer.Port = 587;
+                SmtpServer.Credentials = new System.Net.NetworkCredential(_from, _pass);
+                SmtpServer.EnableSsl = true;
+
+                SmtpServer.Send(mail);
+                return "OK";
+            }
+            catch (Exception ex)
+            {
+                return ex.ToString();
+            }
+
+        }
     }
 }
