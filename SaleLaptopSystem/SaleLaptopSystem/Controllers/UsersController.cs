@@ -111,7 +111,7 @@ namespace SaleLaptopSystem.Controllers
             var usr = users.FirstOrDefault(u => u.Email.Equals(user.Email) && u.Password.Equals(pass));
             if (usr != null)
             {
-                Session["User"] = usr;
+                Session["user"] = usr;
                 return Redirect("/");
             }
             else
@@ -138,14 +138,14 @@ namespace SaleLaptopSystem.Controllers
                 us.Email = email;
                 db.Users.Add(us);
                 db.SaveChanges();
-                Session["User"] = us;
+                Session["user"] = us;
 
             }
             else
             {
                 var users = db.Users;
                 var usr = users.FirstOrDefault(u => u.Email.Equals(email) && u.Address.Equals("Google"));
-                Session["User"] = usr;
+                Session["user"] = usr;
             }
             return RedirectToAction("Index", "Home");
         }
@@ -178,7 +178,7 @@ namespace SaleLaptopSystem.Controllers
 
         public ActionResult Logout()
         {
-            Session["User"] = null;
+            Session["user"] = null;
             return Redirect("/");
         }
 

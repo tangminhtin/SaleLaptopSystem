@@ -219,6 +219,7 @@
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\History.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
@@ -361,6 +362,7 @@
     <Content Include="Views\Orders\Item.cshtml" />
     <Content Include="Views\Search\Index.cshtml" />
     <Content Include="Views\Users\Reset.cshtml" />
+    <Content Include="Views\Orders\History.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

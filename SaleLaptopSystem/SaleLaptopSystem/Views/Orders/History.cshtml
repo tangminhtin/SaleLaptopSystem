@@ -1,0 +1,47 @@
+﻿@using SaleLaptopSystem.Models;
+
+@{
+    ViewBag.Title = "Purchase History";
+}
+
+<h1 class="text-center btn-block btn-pink rounded-pill">Purchase History</h1>
+
+@if (ViewBag.histories != null)
+{
+    <table style="box-shadow: 5px 10px 8px 10px #888888;
+        background: #ffebef;
+        border-radius: 30px;" class="text-center table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+        <thead>
+            <tr class="purple-text" style="border-radius: 30px; background: #ff9eb5;">
+                <th class="th-sm">Image</th>
+                <th class="th-sm">Product</th>
+                <th class="th-sm">Quantity</th>
+                <th class="th-sm">Price</th>
+                <th class="th-sm">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var his in ViewBag.histories)
+            {
+            <tr>
+                @foreach (Image i in ViewBag.image)
+                {
+                    if (i.ProductID == his.ProdId)
+                    {
+                        <td><img src="@i.image" style="width: 60px; height: 60px" alt="Alternate Text" /></td>
+                        break;
+                    }
+                }
+                <td class="text-left pl-2">@his.Name</td>
+                <td>@his.Quantity</td>
+                <td>@his.Price</td>
+                <td>@his.Date</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h1 class="text-center">No data</h1>
+}

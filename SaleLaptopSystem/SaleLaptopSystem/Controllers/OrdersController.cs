@@ -15,9 +15,34 @@ namespace SaleLaptopSystem.Controllers
     {
         private SaleLaptopSystemContext db = new SaleLaptopSystemContext();
 
-        public ActionResult Checkout()
+        public ActionResult History()
         {
             if (Session["User"] == null)
+            {
+                return Redirect("/Users/Login");
+            }
+            int userId = ((User) Session["user"]).ID;
+            var history = from order in db.Orders
+                          join orderDetail in db.OrderDetails on order.ID equals orderDetail.OrderID
+                          join product in db.Products on orderDetail.ProductID equals product.ID
+                          where order.UserID == userId
+                          select new History()
+                          {
+                              Name = product.Name,
+                              Quantity = orderDetail.Quantity,
+                              Price = orderDetail.Price,
+                              Date = order.date,
+                              ProdId = (int)orderDetail.ProductID
+                         };
+            ViewBag.histories = history.ToList();
+            ViewBag.image = db.Images.ToList();
+            return View();
+        }
+
+
+        public ActionResult Checkout()
+        {
+            if (Session["user"] == null)
             {
                 return Redirect("/Users/Login");
             }
@@ -30,7 +55,7 @@ namespace SaleLaptopSystem.Controllers
             User us = (User)Session["user"];
             Order od = new Order();
             od.UserID = us.ID;
-            od.TotalQuantiy = cart1.Count;
+            od.TotalQuantiy = cart1.Sum(item => item.Quantity);
             od.TotalPrice = (Double)cart1.Sum(item => item.Product.Price * item.Quantity);
             od.Active = true;
             DateTime now = DateTime.Now;
